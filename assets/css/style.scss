@@ -72,6 +72,11 @@ a.navbar-item.is-active {
 
 .title {
     margin: auto 0.75rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .subtitle {
