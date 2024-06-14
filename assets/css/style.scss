@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "main.scss";
+@import "main.scss"
+;
 
 #navbar {
     opacity: 0.95;
@@ -37,33 +38,42 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
-
 #hero {
+    position: relative;
+    overflow: hidden;
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
     background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 
-    &::before {
-        filter: blur(0.15rem);
-        background-image: url({{site.heroimage}});
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
+    video#hero-video {
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
         opacity: 0.25;
-        content: "";
+        filter: blur(0.15rem);
+    }
+
+    .hero-body {
+        position: relative;
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
     }
 }
+
 .title {
-    margin: auto 0.75rem!important;
+    margin: auto 0.75rem !important;
 }
+
 .subtitle {
     letter-spacing: 0.25rem;
 }
@@ -189,6 +199,7 @@ a.navbar-item.is-active {
 
     .button {
         transition: all 0.25s ease;
+
         &:focus {
             outline: 0.25rem solid white;
         }
@@ -238,7 +249,8 @@ a.navbar-item.is-active {
                 justify-content: center;
                 margin: auto;
                 transition: all 0.25s ease;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.15);
                 }
             }
@@ -261,6 +273,7 @@ a.navbar-item.is-active {
     .columns {
         .column {
             border-radius: 0.5rem;
+
             .image {
                 background-position: center;
                 background-repeat: no-repeat;
@@ -277,14 +290,17 @@ a.navbar-item.is-active {
         transition: all 0.5s ease;
         margin-bottom: 0.5rem !important;
         display: inline-table;
+
         &:hover {
             transform: scale(0.975);
         }
     }
+
     .card {
         transition: all 0.25s ease;
+
         &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.90)!important;
+            background-color: rgba($color: #000000, $alpha: 0.90) !important;
         }
     }
 }
@@ -293,18 +309,23 @@ a.navbar-item.is-active {
     @media (min-width: 768px) {
         margin: auto 2.5vmax;
     }
+
     a {
         text-decoration: underline;
     }
+
     #title {
         text-decoration: none;
     }
+
     .title {
         margin: auto;
     }
+
     #post-image {
         border-radius: 0.25rem;
     }
+
     .subtitle {
         letter-spacing: 0.05rem;
     }
@@ -316,20 +337,25 @@ a.navbar-item.is-active {
     .tag {
         margin: 0.15rem auto;
     }
+
     .content {
         ol, ul, blockquote {
             display: inline-block;
         }
-        hr{
+
+        hr {
             background-color: grey;
         }
+
         img, iframe {
             max-width: calc(100% - 25vw);
             margin: 0.25rem auto;
+
             @media (max-width: 768px) {
                 max-width: calc(100% - 5vw);
             }
         }
+
         ul, ol {
             display: inline-block;
         }
