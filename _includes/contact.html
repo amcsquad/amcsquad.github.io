@@ -1,38 +1,64 @@
 <section class="hero is-small has-text-centered" id="contact">
     <div class="hero-body">
         <div class="container">
-            {% unless site.email == %}
-            <a id="contact-button" href="mailto:{{site.email}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fas fa-envelope"></i>Send me an Email
-            </a>
-            {% endunless %}
-            {% unless site.linkedin_username == %}
-            <a id="contact-button" href="http://www.linkedin.com/in/{{site.linkedin_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fab fa-linkedin"></i>Connect with me on LinkedIn
-            </a>
-            {% endunless %}
+            <div class="columns is-centered">
+                {% unless site.email == %}
+                <div class="column is-one-third">
+                    <a id="contact-button" href="mailto:{{site.email}}"
+                       class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold is-fullwidth"
+                       target="_blank">
+                        <i class="fas fa-envelope"></i>&nbsp;Send me an Email
+                    </a>
+                </div>
+                {% endunless %}
+                {% unless site.linkedin_username == %}
+                <div class="column is-one-third">
+                    <a id="contact-button" href="http://www.linkedin.com/in/{{site.linkedin_username}}"
+                       class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold is-fullwidth"
+                       target="_blank">
+                        <i class="fab fa-linkedin"></i>&nbsp;Connect on LinkedIn
+                    </a>
+                </div>
+                {% endunless %}
+            </div>
             <hr>
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
             </h3>
-            <div class="column is-full is-size-3">
+            <div class="columns is-centered is-mobile is-multiline social-media-icons">
                 {% unless site.twitter_username == %}
-                <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank" class="has-text-black"><i class="fab fa-twitter"></i></a>
+                <div class="column is-narrow">
+                    <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank" class="has-text-black is-size-3">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
                 {% endunless %}
                 {% unless site.instagram_username ==  %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
-                {% endunless %}
-                {% unless site.linkedin_username ==  %}
-                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
+                <div class="column is-narrow">
+                    <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black is-size-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
                 {% endunless %}
                 {% unless site.github_username ==  %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
+                <div class="column is-narrow">
+                    <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black is-size-3">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
                 {% endunless %}
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    .social-media-icons {
+        margin-top: 1em;
+    }
+
+        .social-media-icons a {
+            margin: 0 0.5em;
+            font-size: 1.5em;
+        }
+</style>
