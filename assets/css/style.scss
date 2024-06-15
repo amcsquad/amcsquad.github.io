@@ -305,6 +305,15 @@ a.navbar-item.is-active {
     }
 }
 
+.truncated-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 4.5rem; /* Adjust this value based on your line height and desired number of lines */
+}
+
 #post {
     @media (min-width: 768px) {
         margin: auto 2.5vmax;

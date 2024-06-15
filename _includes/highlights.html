@@ -7,17 +7,22 @@
                     <div class="card" id="project-card">
                         <div class="card-content">
                             <h2 class="title">{{ highlight.name }}</h2>
-                            <p class="subtitle">{{ highlight.description }}</p>
+                            <p class="truncated-description">{{ highlight.description }}</p>
                             <p>Developed by: <span class="has-text-weight-bold">{{ highlight.developer }}</span></p>
                         </div>
                         <div class="card-image">
-                            <figure class="image is-4by3">
+                            <figure class="image is-4by4">
                                 <img src="{{ highlight.image }}" alt="{{ highlight.name }}">
                             </figure>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
+            </div>
+            <div class="section">
+                <a href="{{site.url}}{{site.baseurl}}/projects" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
+                    All Other Projects
+                </a>
             </div>
         </div>
     </div>
