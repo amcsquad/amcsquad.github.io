@@ -3,99 +3,119 @@
   year: 2023
   image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
   link: https://horsehead.itch.io/tiny-tree
+  tags: a, b, c
   description: Participated in the Global Gamejam 2023 with a project that explores the intricacies of creating a tiny tree ecosystem within a constrained timeframe.
 
 - name: Trijam #179 (3 Hour Gamejam)
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   link: https://amy-elliott.itch.io/tactics-toe-3hr-gamejam
+  tags: strategy, quick-development, 3-hour
   description: Developed a quick yet engaging project for Trijam #179, focusing on strategic gameplay mechanics within a limited development period.
 
 - name: GMTK Gamejam 2022
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   link: https://horsehead.itch.io/ready-to-roll
+  tags: dynamic, innovative, fun
   description: Created a dynamic and fun game for GMTK Gamejam 2022, emphasizing innovative game design and user engagement.
 
 - name: Ludum Dare 50
   image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
   link: https://ldjam.com/events/ludum-dare/50/parcel-run
+  tags: unique-gameplay, theme-based, engaging
   description: Participated in Ludum Dare 50 with a project focused on delivering a unique gameplay experience within the theme constraints.
 
 - name: Ludum Dare 49
   image: https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_960_720.jpg
   link: https://ldjam.com/events/ludum-dare/49/toy-tactics
+  tags: innovative, storytelling, captivating
   description: Developed an innovative game for Ludum Dare 49, exploring new mechanics and storytelling methods to captivate players.
 
 - name: Ludum Dare 48
   image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
   link: https://ldjam.com/events/ludum-dare/48/in-too-deep-2
+  tags: immersive, narrative, engaging
   description: Created a deep and immersive game for Ludum Dare 48, focusing on narrative depth and player engagement.
 
 - name: Global Gamejam
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   link: https://horsehead.itch.io/airport-lost-found-division
+  tags: complex-scenarios, problem-solving, creative
   description: Contributed to the Global Gamejam with a game that challenges players to navigate complex scenarios and solve problems creatively.
 
 - name: Minijam 48
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   link: https://horsehead.itch.io/team-swap-heroes
+  tags: teamwork, strategy, condensed-development
   description: Developed a unique and engaging game for Minijam 48, focusing on teamwork and strategy within a condensed development period.
 
 - name: Portsmouth University Gamejam
   image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
   link: https://horsehead.itch.io/somewhere-in-berkshire
+  tags: intricate-storytelling, player-interaction, innovative
   description: Participated in the Portsmouth University Gamejam, creating a game that explores intricate storytelling and player interaction.
 
 - name: Ludum Dare 46
   image: https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_960_720.jpg
   link: https://ldjam.com/events/ludum-dare/46/the-dragonsitter
+  tags: unique-mechanics, immersive, captivating
   description: Developed a captivating game for Ludum Dare 46, focusing on unique gameplay mechanics and immersive narrative.
 
 - name: Ludum Dare 47
   image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
   link: https://ldjam.com/events/ludum-dare/47/driven-round-the-loop
+  tags: engaging, innovative, boundary-pushing
   description: Created an engaging and innovative game for Ludum Dare 47, exploring new ideas and pushing the boundaries of game design.
 
 - name: TDEMO Hypercasual
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   link: https://amy-elliott.itch.io/blockyroads
+  tags: hypercasual, quick-gameplay, engaging
   description: Developed a hypercasual game for TDEMO, focusing on quick, engaging gameplay that is easy to pick up and play.
 
 - name: GMTK Gamejam 2020
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   link: https://horsehead.itch.io/boxy-see-boxy-do
+  tags: innovative-mechanics, engaging, dynamic
   description: Contributed to GMTK Gamejam 2020 with a project that combines innovative mechanics and engaging gameplay.
 
 - name: TDEMO Fantasy Platformer
   image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
   link: https://amy-elliott.itch.io/poppin-hoppin-unlockin
+  tags: fantasy, platformer, creative-design
   description: Developed a fantasy platformer for TDEMO, focusing on creative level design and immersive world-building.
 
 - name: TDEMO Starfox
   image: https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_960_720.jpg
   link: https://amy-elliott.itch.io/aqua-adventure
+  tags: fast-paced, action, engaging
   description: Created a game inspired by Starfox for TDEMO, emphasizing fast-paced action and engaging gameplay mechanics.
 
 - name: TDEMO Incremental
   image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
   link: https://laylamccahon.itch.io/pet-pals
+  tags: incremental, long-term, strategic
   description: Developed an incremental game for TDEMO, focusing on long-term player engagement and strategic decision-making.
 
 - name: GMTK Gamejam 2019
   image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
   link: https://horsehead.itch.io/gmtk-gamejam-2019
+  tags: innovative-mechanics, user-interaction, engaging
   description: Participated in GMTK Gamejam 2019 with a game that explores innovative game mechanics and user interaction.
 
 - name: Community Gamejam
   image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
   link: https://amy-elliott.itch.io/captain-says
+  tags: community-driven, collaborative, innovative-design
   description: Developed a game for the Community Gamejam, focusing on community-driven themes and collaborative game design.
 
 - name: Ludum Dare 45
   image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg
   link: https://ldjam.com/events/ludum-dare/45/village-simulation-game
+  tags: village-simulation, complex-systems, engaging
   description: Created a village simulation game for Ludum Dare 45, emphasizing complex systems and engaging gameplay.
 
 - name: Portsmouth University Gamejam
   image: https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_960_720.jpg
   link: https://horsehead.itch.io/gamejam-2019
+  tags: unique-gameplay, innovative-design, engaging
   description: Participated in the Portsmouth University Gamejam with a project that explores unique gameplay ideas and innovative design.
