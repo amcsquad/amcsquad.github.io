@@ -1,6 +1,6 @@
 ---
 title: Honours & Awards
-layout: page
+layout: honours-awards
 ---
 
 ### Develop:Star Awards (Tomorrow's Star) / FINALIST  
