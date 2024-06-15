@@ -1,11 +1,11 @@
-<section id="highlights" class="hero is-fullheight has-text-centered has-background-white-ter">
+<section id="highlights" class="hero is-fullheight has-text-centered has-background-white">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-multiline">
                 {% for highlight in site.data.highlights %}
                 <div class="column is-one-fourth">
                     <a href="{{ highlight.link }}" target="_blank">
-                        <div class="card" id="project-card">
+                        <div class="card has-background-white-ter highlight-card" id="project-card">
                             <div class="card-content">
                                 <h2 class="title">{{ highlight.name }}</h2>
                                 <p class="truncated-description">{{ highlight.description }}</p>
