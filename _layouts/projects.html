@@ -12,14 +12,40 @@ layout: compress
 <body>
     {% include navbar.html %}
 
-    <!--Main Section-->
+    <!--Professional Projects Section-->
     <section class="hero is-fullheight" id="project">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="section">
-                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Professional Projects</p>
                 </div>
-                {% include project-card.html %}
+                {% include professional-project-card.html %}
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!--Personal Projects Section-->
+    <section class="hero is-fullheight" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Personal Projects</p>
+                </div>
+                {% include personal-project-card.html %}
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!--Gamejams Section-->
+    <section class="hero is-fullheight" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Gamejams</p>
+                </div>
+                {% include gamejam-card.html %}
             </div>
         </div>
     </section>
