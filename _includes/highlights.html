@@ -4,18 +4,20 @@
             <div class="columns is-multiline">
                 {% for highlight in site.data.highlights %}
                 <div class="column is-one-fourth">
-                    <div class="card" id="project-card">
-                        <div class="card-content">
-                            <h2 class="title">{{ highlight.name }}</h2>
-                            <p class="truncated-description">{{ highlight.description }}</p>
-                            <p>Developed by: <span class="has-text-weight-bold">{{ highlight.developer }}</span></p>
+                    <a href="{{ highlight.link }}" target="_blank">
+                        <div class="card" id="project-card">
+                            <div class="card-content">
+                                <h2 class="title">{{ highlight.name }}</h2>
+                                <p class="truncated-description">{{ highlight.description }}</p>
+                                <p>Developed by: <span class="has-text-weight-bold">{{ highlight.developer }}</span></p>
+                            </div>
+                            <div class="card-image">
+                                <figure class="image is-4by4">
+                                    <img src="{{ highlight.image }}" alt="{{ highlight.name }}">
+                                </figure>
+                            </div>
                         </div>
-                        <div class="card-image">
-                            <figure class="image is-4by4">
-                                <img src="{{ highlight.image }}" alt="{{ highlight.name }}">
-                            </figure>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 {% endfor %}
             </div>
