@@ -87,7 +87,7 @@ a.navbar-item.is-active {
         margin: auto;
 
         img {
-            border: 0.25rem dotted black;
+            border: 0.25rem;
         }
     }
 
@@ -433,4 +433,16 @@ a.navbar-item.is-active {
     .responsive-title {
         font-size: 3rem; /* Desktop screens */
     }
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.social-media-icons a {
+    margin: 0 0.5em;
+    font-size: 1.5em;
 }

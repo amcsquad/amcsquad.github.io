@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     {% include head.html %}
@@ -14,7 +14,7 @@ layout: compress
             width: 100%;
             background-color: #fff;
             border-top: 1px solid #ccc;
-            z-index: 1000;
+            z-index: 10;
             box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
         }
 
@@ -67,6 +67,10 @@ layout: compress
                     overflow-wrap: break-word !important;
                 }
         }
+
+        .spacing {
+            height: 50px;
+        }
     </style>
 </head>
 
@@ -110,8 +114,8 @@ layout: compress
         </div>
     </section>
 
-    <!--Footer-->
-    {% include footer.html %}
+    <!--spacing here-->
+    <div class="spacing"></div>
 
     <!-- Bottom Navbar for easy navigation -->
     <nav class="bottom-navbar" role="navigation" aria-label="bottom navigation">
@@ -121,6 +125,7 @@ layout: compress
             <a class="navbar-item is-size-8-mobile" href="#gamejams"><span>Gamejams</span></a>
         </div>
     </nav>
+
 </body>
 
 </html>
