@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: Amy Elliott
 # Description of the Site
-description: Hi, I'm a Gameplay Programmer!
+description: I'm a Gameplay Programmer!
 # URL of Image of the Site
 site-image: /amy-portfolio/assets/images/meta.jpg
 # Keywords of the Site
@@ -26,7 +26,7 @@ linkedin_username: amy-m-elliott
 github_username:  AmyE123
 
 # Google Analytics
-google-analytics: UA-163806439-1
+google-analytics: G-SJTTGX1K8N
 
 # Disqus
 disqus-shortname: amy
