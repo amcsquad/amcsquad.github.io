@@ -71,7 +71,7 @@ a.navbar-item.is-active {
 }
 
 .title {
-    margin: auto 0.75rem !important;
+    margin: auto 0.60rem !important;
     display: block; /* Changed from -webkit-box */
     /* Removed -webkit-line-clamp, -webkit-box-orient, overflow, and text-overflow properties */
     word-wrap: break-word; /* Ensure long words break onto the next line */
@@ -422,16 +422,6 @@ a.navbar-item.is-active {
         left: 0;
         width: 100%;
         height: 100%;
-    }
-}
-
-.responsive-title {
-    font-size: 2rem; /* Default for mobile screens */
-}
-
-@media (min-width: 768px) {
-    .responsive-title {
-        font-size: 3rem; /* Desktop screens */
     }
 }
 
