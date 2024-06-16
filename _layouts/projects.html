@@ -48,7 +48,7 @@ layout: compress
                     color: white !important;
                 }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             .bottom-navbar .navbar-item {
                 font-size: 0.9rem;
                 padding: 0.5rem;
@@ -66,6 +66,16 @@ layout: compress
                     line-height: 1.2 !important;
                     overflow-wrap: break-word !important;
                 }
+
+            /* Adjust card width for mobile */
+            .card {
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+
+            .column {
+                width: 100% !important;
+            }
         }
 
         .spacing {
@@ -110,6 +120,18 @@ layout: compress
                     <p class="subtitle is-uppercase has-text-weight-medium has-text-grey section-title">Gamejams</p>
                 </div>
                 {% include gamejam-card.html %}
+            </div>
+        </div>
+    </section>
+
+    <!--Other Section-->
+    <section class="hero is-small has-background-white-ter" id="others">
+        <div class="hero-body" id="project">
+            <div class="container has-text-centered">
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey section-title">Other</p>
+                </div>
+                {% include other-card.html %}
             </div>
         </div>
     </section>

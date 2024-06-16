@@ -4,19 +4,21 @@
          id="project-card">
         <a href="{{ gamejam.link }}" target="_blank">
             <div class="has-background-black card">
-                <figure class="image is-2by1" style="background-image: url({{ gamejam.image }});">
+                <figure class="image is-4by3" style="background-image: url({{ gamejam.image }});">
                 </figure>
                 <div class="card-content">
-                    <h1 class="title has-text-white is-size-6">{{ gamejam.name }}</h1>
+                    <h1 class="title has-text-white is-size-4">{{ gamejam.name }}</h1>
                     <div style="margin-top: 10px;">
                         {%- assign tags = gamejam.tags | split: ',' -%}
                         {%- unless tags.size == 0 -%}
                         <p class="is-uppercase" style="font-size: 0.75rem;">
-                            <!-- Adjust the font-size value as needed -->
-                            {% assign i = 0 %}
                             {% for tag in tags %}
-                            <span class="tag is-link" style="font-size: 0.60rem; margin-bottom: 0.25rem;">{{ tag | strip }}</span> <!-- Adjust the font-size value as needed -->
-                            {% assign i = i | plus: 1 %}
+                            {% assign tag_strip = tag | strip %}
+                            {% if tag_strip == "Solo" %}
+                            <span class="tag" style="font-size: 0.60rem; margin-bottom: 0.25rem; background-color: gold; color: black;">{{ tag_strip }}</span>
+                            {% else %}
+                            <span class="tag is-link" style="font-size: 0.60rem; margin-bottom: 0.25rem;">{{ tag_strip }}</span>
+                            {% endif %}
                             {% endfor %}
                         </p>
                         {%- endunless -%}

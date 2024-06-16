@@ -1,14 +1,54 @@
-- name: Placeholder
-  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160470&authkey=%21ADx_bkNMlHKxTvk&width=1920&height=1634
-  link: /projects/stampede-racing-royale
-  tags: Unity, C#
-- name: Placeholder
+- name: TactiKit Game
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161016&authkey=%21AG_g5DwcsMXTJEQ&width=903&height=903
+  link: 
+  tags: Solo, Unity, C#, A* Pathfinding, Desirability Calculations, AI
+
+- name: TactiKit Toolkit Concept
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161017&authkey=%21AGTK5Bu7tYMOFpk&width=1920&height=1080
+  link: 
+  tags: Solo, Tools
+
+- name: NDS Rhythm Game
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161024&authkey=%21ADP6AcE5uOadfnI&width=1920&height=1080
   link:
-  image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
-  tags: a, b, c
-  description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci tempore illo accusantium consequatur doloremque dignissimos quo, maxime eius cum enim recusandae qui, delectus ea autem architecto? Velit natus, tempora, quaerat voluptates consectetur magnam aliquid veritatis cumque tempore ipsam delectus eveniet distinctio hic quod reiciendis excepturi beatae doloribus, recusandae ex sed sapiente aliquam deleniti! Quis commodi culpa doloremque quaerat rem natus! Vero ipsam expedita id at quidem. In sit voluptatibus error cum? Minima sunt porro, architecto natus accusantium earum rerum voluptate recusandae fugit, error consequatur, quibusdam dolore quod minus culpa ipsa laudantium odit distinctio exercitationem dolorum. Sunt iste cumque a quae reprehenderit sed dolorum, culpa hic dolores saepe asperiores illum consectetur vitae tenetur dolorem voluptatum totam in repellat voluptatibus laudantium deleniti quasi. Adipisci animi cupiditate eligendi optio nemo accusantium sed quo expedita modi dolor autem atque natus, non excepturi. Eaque inventore quis aperiam vel quae dicta tenetur, placeat facilis, natus dignissimos molestias quidem dolor ad voluptate nam harum maxime. Commodi illum esse iste eaque, saepe praesentium, vero adipisci necessitatibus tenetur maiores sit voluptate eos facere doloribus. Explicabo neque quibusdam, sint nihil reprehenderit alias asperiores aperiam rem voluptas quas, in qui odio quos similique at. Illo voluptas temporibus enim laudantium quas?
-- name: Placeholder
+  tags: Solo, C, Assembly, MakeFiles
+
+- name: Tool Dev Research
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161027&authkey=%21ANeM_VuY6Ijs3nQ&width=800&height=620
   link:
-  image: https://cdn.pixabay.com/photo/2016/06/25/12/55/art-1478831_960_720.jpg
-  tags: a, b, c
-  description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci tempore illo accusantium consequatur doloremque dignissimos quo, maxime eius cum enim recusandae qui, delectus ea autem architecto? Velit natus, tempora, quaerat voluptates consectetur magnam aliquid veritatis cumque tempore ipsam delectus eveniet distinctio hic quod reiciendis excepturi beatae doloribus, recusandae ex sed sapiente aliquam deleniti! Quis commodi culpa doloremque quaerat rem natus! Vero ipsam expedita id at quidem. In sit voluptatibus error cum? Minima sunt porro, architecto natus accusantium earum rerum voluptate recusandae fugit, error consequatur, quibusdam dolore quod minus culpa ipsa laudantium odit distinctio exercitationem dolorum. Sunt iste cumque a quae reprehenderit sed dolorum, culpa hic dolores saepe asperiores illum consectetur vitae tenetur dolorem voluptatum totam in repellat voluptatibus laudantium deleniti quasi. Adipisci animi cupiditate eligendi optio nemo accusantium sed quo expedita modi dolor autem atque natus, non excepturi. Eaque inventore quis aperiam vel quae dicta tenetur, placeat facilis, natus dignissimos molestias quidem dolor ad voluptate nam harum maxime. Commodi illum esse iste eaque, saepe praesentium, vero adipisci necessitatibus tenetur maiores sit voluptate eos facere doloribus. Explicabo neque quibusdam, sint nihil reprehenderit alias asperiores aperiam rem voluptas quas, in qui odio quos similique at. Illo voluptas temporibus enim laudantium quas?
+  tags: Solo, Dissertation
+
+- name: Captain Says Mobile
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160590&authkey=%21AApD3-Y0MVdFnDw&width=1920&height=1634
+  link:
+  tags: Solo, Unity, C#, Mobile
+
+- name: SFML & CMake Study
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160960&authkey=%21AKDsFl0qE-smgBY&width=1920&height=1634
+  link:
+  tags: Solo, C++, SFML, CMake
+
+- name: PS5 DevKit Study
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161022&authkey=%21AAQ8pXXKwlj8nqw&width=1232&height=1232
+  link:
+  tags: Solo, C++, DevKit, DevTools
+
+- name: Amy's Math Library
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161019&authkey=%21AH_KybwF8dRWU08&width=505&height=175
+  link:
+  tags: Solo, Unity, C#, Math
+
+- name: Ordos - Order & Chaos
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160670&authkey=%21ABttzCqlr8Aas4E&width=1920&height=1634
+  link: 
+  tags: Solo, Unity, C#, Art
+
+- name: Beat City
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160562&authkey=%21AJF96gS91su3y0w&width=1920&height=1634
+  link:
+  tags: Solo, Unity, C#
+
+- name: Western Runner
+  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160792&authkey=%21AFyBGBon1CKBThI&width=1920&height=1634
+  link: 
+  tags: Solo, Unreal Engine

@@ -1,15 +1,15 @@
 <div class="columns is-centered is-multiline is-mobile">
-    {% for project in site.data.professional-projects %}
+    {% for other in site.data.others %}
     <div class="column has-text-centered is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
          id="project-card">
-        <a href="{{ site.baseurl }}{{ project.link }}" target="_blank">
+        <a href="{{ other.link }}" target="_blank">
             <div class="has-background-black card">
-                <figure class="image is-1by1" style="background-image: url({{ project.image }});">
+                <figure class="image is-4by3" style="background-image: url({{ other.image }});">
                 </figure>
                 <div class="card-content">
-                    <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
+                    <h1 class="title has-text-white is-size-4">{{ other.name }}</h1>
                     <div style="margin-top: 10px;">
-                        {%- assign tags = project.tags | split: ',' -%}
+                        {%- assign tags = other.tags | split: ',' -%}
                         {%- unless tags.size == 0 -%}
                         <p class="is-uppercase" style="font-size: 0.75rem;">
                             <!-- Adjust the font-size value as needed -->

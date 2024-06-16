@@ -1,6 +1,6 @@
 ---
 layout: projects
 title: Projects
-description: Some are playable on web
+description: Click on a project to read more.
 ---
 
