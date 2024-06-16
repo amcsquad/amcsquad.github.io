@@ -12,11 +12,13 @@
                         {%- assign tags = project.tags | split: ',' -%}
                         {%- unless tags.size == 0 -%}
                         <p class="is-uppercase" style="font-size: 0.75rem;">
-                            <!-- Adjust the font-size value as needed -->
-                            {% assign i = 0 %}
                             {% for tag in tags %}
-                            <span class="tag is-link" style="font-size: 0.60rem; margin-bottom: 0.25rem;">{{ tag | strip }}</span> <!-- Adjust the font-size value as needed -->
-                            {% assign i = i | plus: 1 %}
+                            {% assign tag_strip = tag | strip %}
+                            {% if tag_strip == "Solo" %}
+                            <span class="tag" style="font-size: 0.60rem; margin-bottom: 0.25rem; background-color: gold; color: black;">{{ tag_strip }}</span>
+                            {% else %}
+                            <span class="tag is-link" style="font-size: 0.60rem; margin-bottom: 0.25rem;">{{ tag_strip }}</span>
+                            {% endif %}
                             {% endfor %}
                         </p>
                         {%- endunless -%}

@@ -1,59 +1,54 @@
 - name: TactiKit Game
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161016&authkey=%21AG_g5DwcsMXTJEQ&width=903&height=903
   link: 
-  tags: Unity, C#, AI, A* Pathfinding, Desirability Calculations
+  tags: Solo, Unity, C#, A* Pathfinding, Desirability Calculations, AI
 
 - name: TactiKit Toolkit Concept
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161017&authkey=%21AGTK5Bu7tYMOFpk&width=1920&height=1080
   link: 
-  tags: Tools
+  tags: Solo, Tools
 
 - name: NDS Rhythm Game
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161024&authkey=%21ADP6AcE5uOadfnI&width=1920&height=1080
   link:
-  tags: C, Assembly, MakeFiles
+  tags: Solo, C, Assembly, MakeFiles
 
 - name: Tool Dev Research
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161027&authkey=%21ANeM_VuY6Ijs3nQ&width=800&height=620
   link:
-  tags: Dissertation, Tool Development
+  tags: Solo, Dissertation
 
 - name: Captain Says Mobile
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160590&authkey=%21AApD3-Y0MVdFnDw&width=1920&height=1634
   link:
-  tags: Unity, C#, Mobile
+  tags: Solo, Unity, C#, Mobile
 
 - name: SFML & CMake Study
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160960&authkey=%21AKDsFl0qE-smgBY&width=1920&height=1634
   link:
-  tags: C++, SFML, CMake
+  tags: Solo, C++, SFML, CMake
 
 - name: PS5 DevKit Study
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161022&authkey=%21AAQ8pXXKwlj8nqw&width=1232&height=1232
   link:
-  tags: C++, PS5 DevKit, PS5 DevTools
+  tags: Solo, C++, DevKit, DevTools
 
 - name: Amy's Math Library
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161019&authkey=%21AH_KybwF8dRWU08&width=505&height=175
   link:
-  tags: Unity, C#, Math
+  tags: Solo, Unity, C#, Math
 
 - name: Ordos - Order & Chaos
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160670&authkey=%21ABttzCqlr8Aas4E&width=1920&height=1634
   link: 
-  tags: Unity, C#, 3D Art, 2D Art
+  tags: Solo, Unity, C#, Art
 
 - name: Beat City
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160562&authkey=%21AJF96gS91su3y0w&width=1920&height=1634
   link:
-  tags: Unity, C#
+  tags: Solo, Unity, C#
 
 - name: Western Runner
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160792&authkey=%21AFyBGBon1CKBThI&width=1920&height=1634
   link: 
-  tags: Unreal Engine
-
-- name: Hamlets' HAHD Dodgeball Arena
-  image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160959&authkey=%21AJ9HhTsjym83hm8&width=1920&height=1634
-  link:
-  tags: Marketing Pitch
+  tags: Solo, Unreal Engine
