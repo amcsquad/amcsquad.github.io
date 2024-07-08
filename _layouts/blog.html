@@ -18,9 +18,12 @@ layout: compress
         </div>
         <div id="results-container"></div>
         <!--Blog Cards Section-->
-        {% for post in site.posts %}
-        {% include blog-card.html %}
-        {% endfor %}
+        <div id="blog-cards-section">
+            {% for post in site.posts %}
+            <div class="blog-card" data-tags="{{ post.tags | join: ', ' }}">
+                {% include blog-card.html %}
+            </div>
+            {% endfor %}
         </div>
     </section>
     <br>
@@ -39,6 +42,21 @@ layout: compress
         return tagsHtml;
     }
 
+    function filterPosts() {
+        const hideMiscPosts = document.getElementById('hideMiscPosts').checked;
+        const blogCards = document.querySelectorAll('.blog-card');
+        blogCards.forEach(card => {
+            const tags = card.getAttribute('data-tags').split(', ');
+            if (hideMiscPosts && (tags.includes('gamedevlondon') || tags.includes('misc'))) {
+                card.style.display = 'none';
+            } else {
+                card.style.display = '';
+            }
+        });
+    }
+
+    document.getElementById('hideMiscPosts').addEventListener('change', filterPosts);
+
     SimpleJekyllSearch({
         searchInput: document.getElementById('search'),
         resultsContainer: document.getElementById('results-container'),
@@ -52,7 +70,7 @@ layout: compress
                     <div class="column has-text-left-desktop has-text-left-tablet">
                         <h1 class="title is-size-4-touch">{title}</h1>
                         <div class="content has-text-grey">
-                            {content}
+                            {description}
                             <hr class="has-background-grey">
                             <p class="subtitle is-uppercase">
                                 <i class="fas fa-tags"></i>
@@ -73,6 +91,8 @@ layout: compress
             return value;
         }
     });
+
+    window.addEventListener('load', filterPosts);
     </script>
 
 </body>

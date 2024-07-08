@@ -436,3 +436,23 @@ a.navbar-item.is-active {
     margin: 0 0.5em;
     font-size: 1.5em;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust spacing between items */
+}
+
+.flex-item-2 {
+    flex: 1 1 48%; /* 48% width to allow for spacing between images */
+    min-width: 48%; /* Ensures items are at least 48% wide */
+}
+
+.flex-item-4 {
+    flex: 1 1 48%; /* 48% width to allow for spacing between images */
+    min-width: 48%; /* Ensures items are at least 48% wide */
+}
+
+.flex-item img {
+    width: 100%;
+}
