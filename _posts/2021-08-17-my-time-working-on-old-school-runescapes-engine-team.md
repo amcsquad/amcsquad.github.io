@@ -3,6 +3,7 @@ title: My Time Working On Old School RuneScape's Engine Team
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161052&authkey=%21ANyrK8EhynOzHDk&width=1952&height=1057"
 description: I was given the opportunity to work on engine programming for Old School RuneScape's C++ Client, this helped me learn lots about how game engines work.
+legacy: true
 tags:
 - personal
 - jagex

@@ -3,6 +3,7 @@ title: What I've Learnt Working On Jagex's Unannounced MMORPG
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161046&authkey=%21ALtuWGd37RY-laQ&width=1920&height=1634"
 description: One morning, I woke up to an email titled 'Welcome to Jagex Games Studio' - I could barely believe it!
+legacy: true
 tags:
 - personal
 - jagex

@@ -3,6 +3,7 @@ title: Game Dev Mentoring - Design Documents
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161098&authkey=%21ACXxT73s6vzH56g&width=1920&height=1634"
 description: In this blog, I talk about my process of setting up a games development course for a student I've began mentoring 1 to 1, and the process of helping him make a design document for a game which he wants to make.
+legacy: true
 tags:
 - mentoring
 - teaching

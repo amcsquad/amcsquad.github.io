@@ -3,6 +3,7 @@ title: Body Art In Video Games
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161242&authkey=%21AByIbVszZD-FxW0&width=1920&height=1634"
 description: Host Nichola & Amy discuss body art within video games - do digital tattoos influence real-life tattoos, does there have to be meaning behind characters with tattoos/body art and could there be a way to better showcase tattoos in video games?
+legacy: true
 tags:
 - gamedevlondon
 - podcast

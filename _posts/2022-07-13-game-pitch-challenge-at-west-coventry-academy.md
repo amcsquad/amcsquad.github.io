@@ -3,6 +3,7 @@ title: Game Pitch Challenge At West Coventry Academy
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161238&authkey=%21AJ2dzjXmYDu48r4&width=1920&height=1634"
 description: I attended West Coventry Academy to represent Sumo Digital. I helped run a game pitch day with some colleagues.
+legacy: true
 tags:
 - personal
 - education

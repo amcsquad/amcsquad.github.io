@@ -3,6 +3,7 @@ title: I Learnt About The Different Pathfinding Algorithms & Made A Tool In C++.
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161220&authkey=%21AKUWjCRwCEMN91c&width=1920&height=1634"
 description: Pathfinding algorithms have always been something which interests me, and so I decided to make myself a pathfinding tool!
+legacy: true
 tags:
 - study
 - research

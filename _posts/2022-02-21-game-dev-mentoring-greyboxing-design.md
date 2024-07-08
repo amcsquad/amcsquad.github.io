@@ -3,6 +3,7 @@ title: Game Dev Mentoring - Greyboxing & Design
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161144&authkey=%21AAkext7iNi3E-vo&width=1920&height=1634"
 description: I’ve been mentoring Thomas in Games Development, and his next step after making his GDD was designing! I helped him with this process and in this blog, I talk about his work.
+legacy: true
 tags:
 - mentoring
 - teaching
