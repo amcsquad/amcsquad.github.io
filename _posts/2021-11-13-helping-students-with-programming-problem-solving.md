@@ -3,6 +3,7 @@ title: Helping Students With Programming & Problem Solving
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161064&authkey=%21AMYlRRXA7rtPPUc&width=1920&height=1634"
 description: Shortly after volunteering to mentor at an Into Games event, I had found an opportunity to help students solve any problems with programming in a Gamejam using Twine, which is a tool I’ve not used before!
+legacy: true
 tags:
 - personal
 - education

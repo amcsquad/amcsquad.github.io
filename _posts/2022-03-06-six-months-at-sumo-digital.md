@@ -3,6 +3,7 @@ title: 6 Months At Sumo Digital
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161159&authkey=%21APIS9F6PBSK7tVs&width=1920&height=1634"
 description: In August, I started my year-long placement at Sumo Leamington, and in that time, I’ve learned and done so much at work!
+legacy: true
 tags:
 - personal
 - sumo-digital

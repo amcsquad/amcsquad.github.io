@@ -3,6 +3,7 @@ title: Internships & Placements in the Games Industry
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161161&authkey=%21AGNSRgInIVehY8Q&width=1920&height=1634"
 description: Amy talks with Tiril (T) Schjerven (Concept Art Intern - Jagex) and Tom (Content Producer Intern - Into Games) about their journeys into the games industry and how their internships went!
+legacy: true
 tags:
 - gamedevlondon
 - podcast

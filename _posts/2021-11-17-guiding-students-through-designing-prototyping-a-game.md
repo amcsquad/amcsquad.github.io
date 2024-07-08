@@ -3,6 +3,7 @@ title: Guiding Students Through Designing & Prototyping a Game
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161080&authkey=%21ACwjn5nGL3XciW0&width=1920&height=1634"
 description: Back in July, I volunteered at Into Games to help a group of students with project management for designing and prototyping a mining game loop. This was my first ever mentoring experience.
+legacy: true
 tags:
 - personal
 - education

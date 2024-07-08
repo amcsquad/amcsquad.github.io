@@ -3,6 +3,7 @@ title: I Gave a Talk In-Person For The First Time
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161113&authkey=%21AGWtsehg1oHqZg4&width=1920&height=1634"
 description: I delivered a talk to students in my old high school, this was my first time talking in front of a large audience in person, as up to this point, a lot of the stuff I had done was online due to covid!
+legacy: true
 tags:
 - personal
 - education

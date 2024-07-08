@@ -3,6 +3,7 @@ title: Game Dev Mentoring - Making FPS Gamejams
 layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161171&authkey=%21ALIfl4xR5bxy_nI&width=1920&height=1634"
 description: After working on his prophunt game for a while, Thomas wanted to try out different game ideas, and so I helped him with making some of his own FPS Gamejam Games inspired by some games he enjoyed playing!
+legacy: true
 tags:
 - mentoring
 - education
