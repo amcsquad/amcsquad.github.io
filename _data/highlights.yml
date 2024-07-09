@@ -1,15 +1,17 @@
 - name: Stampede Racing Royale
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160470&authkey=%21ADx_bkNMlHKxTvk&width=1920&height=1634
-  link:
+  link: /projects/professional/stampede-racing-royale
   developer: Sumo Leamington
   description: Working with several programming teams to create an exciting MMO battle-royale-racing game from start to finish!
+
 - name: OldSchool RuneScape
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160510&authkey=%21ABZ9V-hPU2Y4DOE&width=1920&height=1634
-  link:
+  link: /projects/professional/old-school-runescape
   developer: Jagex
   description: Worked with the engine team to support the operation and on-going enhancement of the RuneScape engine and associated systems.
+
 - name: Unannounced MMORPG
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160511&authkey=%21AEo_ABKbblg0C5E&width=1920&height=1634
-  link:
+  link: /projects/professional/unannounced-aaa-mmorpg
   developer: Jagex
   description: Worked on gameplay for an Unannounced Triple-A MMORPG in pre-production & implemented some core gameplay mechanics.

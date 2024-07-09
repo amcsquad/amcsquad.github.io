@@ -79,7 +79,7 @@ defaults:
 collections:
   projects:
     output: true
-    permalink: /projects/:title/
+    permalink: /projects/:categories/:title/
 
 # Exclude
 exclude:
