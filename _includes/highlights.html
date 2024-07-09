@@ -9,7 +9,14 @@
                             <div class="card-content">
                                 <h2 class="title">{{ highlight.name }}</h2>
                                 <p class="truncated-description">{{ highlight.description }}</p>
-                                <p>Developed by: <span class="has-text-weight-bold">{{ highlight.developer }}</span></p>
+                                <hr class="styled-hr">
+                                <p class="developed-by">Developed by: <span class="developer-name">{{ highlight.developer }}</span></p>
+                                <!-- Date Range Section -->
+                                {% if highlight.start-date and highlight.end-date %}
+                                <div class="date-range">
+                                    <p>{{ highlight.start-date }} - {{ highlight.end-date }}</p>
+                                </div>
+                                {% endif %}
                             </div>
                             <div class="card-image">
                                 <figure class="image is-4by4">
@@ -29,3 +36,31 @@
         </div>
     </div>
 </section>
+
+<style>
+    .developed-by {
+        font-size: 0.875rem;
+        color: #4a4a4a;
+        margin: 0.5em 0 0.2em 0;
+    }
+
+    .developer-name {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .date-range p {
+        font-size: 0.75rem;
+        color: #7a7a7a;
+        margin: 0.2em 0;
+    }
+
+    .highlight-card {
+        transition: transform 0.3s;
+    }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+</style>
