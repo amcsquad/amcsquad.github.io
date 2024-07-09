@@ -1,11 +1,11 @@
 - name: Stampede Racing Royale
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160466&authkey=%21ABcky1dXpufoWDE&width=4365&height=2493
-  #link: /projects/stampede-racing-royale
+  link: /projects/stampede-racing-royale
   tags: Sumo, C#, Unity
 
 - name: Old School RuneScape
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160484&authkey=%21ADmLN3wUgB-KLw0&width=1201&height=631
-  link:
+  link: /wip
   tags: Jagex, C++, Proprietary Engine
 
 - name: Unannounced AAA MMORPG
