@@ -5,6 +5,7 @@ layout: game
 post-image: " "
 description:
 tags:
+legacylink: https://legacy.amy-portfolio.com/games/aqua-adventure/#/
 heading: "StarFox is now underwater!"
 summary: "Aqua Adventure is a shoot em' up game designed around the theme 'Starfox'. <small>(TDEMO Starfox)</small>"
 icon: https://am3pap005files.storage.live.com/y4mkIM84IeTm3tJ1UnVon-NJX7R_-7OrHMm3rTUdJbSFCzFmkGK9vMda0vtxwQjtcqscPtYDaLT0f-fUN_SIxt0CVSqyqeCskpg58g-ZsgXYBo93kz_6mkOZEl4wFAROjwch-i6XV7J5-yDyGPrrDiXLbGfcah6ouyWjK4CSuX9qHB8iLMG0TYszHWKIWnYlsVU?width=1920&height=1634&cropmode=none
