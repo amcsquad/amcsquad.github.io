@@ -1,5 +1,10 @@
-{% if page.legacy %}
-<div style="background-color: #ff4444; color: white; padding: 10px; margin-bottom: 20px; text-align: center; ">
+{% if page.legacy or page.legacylink %}
+<div style="background-color: #ff4444; color: white; padding: 10px; margin-bottom: 20px; text-align: center;">
     This is a legacy post, ported from my old portfolio. If you notice a mistake or a bug, please report it <a href="https://forms.gle/kcLt8QHA7bArdjeP6" target="_blank" style="color: white; text-decoration: underline;">here</a>.
+    {% if page.legacylink %}
+    <div style="margin-top: 10px;">
+        You can view the original post <a href="{{ page.legacylink }}" target="_blank" style="color: yellow; text-decoration: underline;">here</a>.
+    </div>
+    {% endif %}
 </div>
 {% endif %}
