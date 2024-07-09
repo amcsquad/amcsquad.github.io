@@ -1,0 +1,43 @@
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>Status:</th>
+            <td><small class="btn btn-col status-button">{{page.status}}</small></td>
+        </tr>
+        <tr>
+            <th>Project Type:</th>
+            <td><small class="btn btn-col status-button">{{page.projecttype}}</small></td>
+        </tr>
+        <tr>
+            <th>Development Duration:</th>
+            <td><small class="btn btn-col status-button">{{page.duration}}</small></td>
+        </tr>
+        <tr>
+            <th>Tools Used:</th>
+            <td>
+                {% for tool in page.tools %}
+                <small class="btn btn-col status-button">{{tool}}</small>
+                {% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Primary Roles:</th>
+            <td>
+                {% for role in page.roles %}
+                <small class="btn btn-col status-button">{{role}}</small>
+                {% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% if page.hasRepository %}
+<hr>
+<div class="fixed-bottom-right">
+    <a href="http://github.com/{{ page.repo }}" target="_blank">
+        <img src="{{ page.ghReadme }}" alt="GitHub Repository">
+    </a>
+</div>
+{% endif %}

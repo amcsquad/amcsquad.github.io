@@ -211,7 +211,6 @@ a.navbar-item.is-active {
     }
 }
 
-
 #footer {
     #backtotop {
         transition: all 0.25s ease;
@@ -462,4 +461,72 @@ a.navbar-item.is-active {
     height: 1px;
     background: linear-gradient(to right, transparent, #ccc, transparent);
     margin: 1em 0;
+}
+
+.game-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.status-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    margin: 0.25rem;
+    display: inline-block;
+}
+
+.btn-col {
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.fixed-bottom-right {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.centered-content {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
 }

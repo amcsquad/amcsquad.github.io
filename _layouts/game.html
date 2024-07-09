@@ -1,0 +1,162 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
+    <style>
+        .mobile-warning {
+            display: none;
+            text-align: center;
+            padding: 15px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .mobile-embed {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-embed {
+                display: none;
+            }
+
+            .mobile-warning,
+            .mobile-embed {
+                display: block;
+            }
+
+            .card {
+                padding: 20px;
+                margin: 0 10px;
+            }
+        }
+
+        .centered-content {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .centered-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            max-width: 100%;
+            width: 1000px;
+            height: 600px;
+        }
+
+        .mobile-embed iframe {
+            max-width: 100%;
+            width: 552px;
+            height: 150px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    {% include navbar.html %}
+
+    <section class="hero is-halfheight has-text-centered" id="hero">
+        <div class="hero-body">
+            {% if page.showreel %}
+            <video id="hero-video" autoplay muted playsinline loop>
+                <source src="{{ page.showreel }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            {% endif %}
+            <div class="container">
+                <img class="game-icon" src="{{ page.icon }}" alt="Game Icon" />
+                <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
+                    {{ page.title }}
+                </h1>
+                <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
+                    {{ page.heading }}
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="container centered-content" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="row" style="margin-bottom: 40px;">
+            <div class="col-md-12">
+                <div class="card" style="padding: 20px;">
+                    <div style="padding-bottom: 20px;">
+                        <h2 class="title is-size-5" style="margin: 0rem !important; text-align:center;">About the game</h2>
+                        <hr class="styled-hr">
+                        <p class="post-meta">{{ page.summary }}</p>
+                    </div>
+
+                    <div class="credits-section" style="padding-bottom: 20px;">
+                        <div class="d-flex flex-wrap justify-content-center">
+                            {% for credit in page.credits %}
+                            <small class="btn btn-col status-button" style="margin: 5px;">{{credit}}</small>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centered-div">
+                {% if page.isgameembed %}
+                <!-- MOBILE WARNING -->
+                <div class="mobile-warning">Cannot display game on mobile devices.</div>
+                <!-- MOBILE EMBED -->
+                <div class="mobile-embed">
+                    <iframe frameborder="0" src="{{ page.widgetembed }}"></iframe>
+                </div>
+                <!-- GAME EMBED -->
+                <div class="desktop-embed">
+                    <iframe frameborder="0" src="{{ page.gameembed }}" allowfullscreen=""></iframe>
+                </div>
+                <hr>
+                {% endif %}
+            </div>
+
+            <hr class="styled-hr">
+
+            <div class="col-md-12" style="margin-top: 40px;">
+                <div class="card p-4" style="padding: 20px;">
+                    <h2 class="title is-size-6" style="padding-bottom: 20px; margin: 0rem !important;">Details</h2>
+                    {% include game-details.html %}
+                </div>
+            </div>
+        </div>
+
+        <hr class="styled-hr">
+
+        {{ content }}
+
+    </div>
+    {% include footer.html %}
+</body>
+</html>
