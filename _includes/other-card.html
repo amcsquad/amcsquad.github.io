@@ -8,6 +8,12 @@
                 </figure>
                 <div class="card-content">
                     <h1 class="title has-text-white is-size-4">{{ other.name }}</h1>
+                    <!-- Date Range Section -->
+                    {% if project.start-date and project.end-date %}
+                    <div class="date-range" style="margin-top: 5px;">
+                        <p class="is-size-7 has-text-grey-light">{{ project.start-date }} - {{ project.end-date }}</p>
+                    </div>
+                    {% endif %}
                     <div style="margin-top: 10px;">
                         {%- assign tags = other.tags | split: ',' -%}
                         {%- unless tags.size == 0 -%}
