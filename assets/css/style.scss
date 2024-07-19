@@ -530,3 +530,92 @@ a.navbar-item.is-active {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Reuse existing styles for consistency */
+.blog-highlight-card {
+    max-width: 600px; /* Ensure it fits three in a row */
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: all 0.25s ease;
+    transform: scale(0.98);
+    line-height: normal;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: scale(1);
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* Ensure image consistency */
+.blog-highlight-card .image {
+    height: 100px; /* Fixed height for image */
+    width: 100%; /* Make sure image takes full width */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.5rem;
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.blog-highlight-card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden; /* Prevents overflow of content */
+}
+
+.blog-highlight-card .content h1 {
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.blog-highlight-card .content .has-text-grey {
+    font-size: 0.875rem; /* Adjust font size as needed */
+    line-height: 1.2;
+    margin: 0.25rem 0;
+    overflow: hidden; /* Prevents overflow of content */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits to 3 lines of text */
+    -webkit-box-orient: vertical;
+}
+
+.truncated-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 4.5rem; /* Adjust this value based on your line height and desired number of lines */
+}
+
+#blog-highlights-section .columns {
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .blog-highlight-card {
+        max-width: 100%; /* Take full width on mobile */
+        margin: 0.5rem 0; /* Adjust margin for spacing */
+    }
+
+    #blog-highlights-section .columns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .column {
+        flex: 1 0 100%; /* Take full width */
+        max-width: 100%; /* Ensure full width */
+    }
+}
