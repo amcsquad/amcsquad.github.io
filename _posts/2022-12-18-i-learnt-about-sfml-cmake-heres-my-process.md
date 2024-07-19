@@ -4,6 +4,7 @@ layout: post
 post-image: "https://am3pap005files.storage.live.com/y4mDRUUPodeb9B4xSjYfTgnlrmsU4TF8nitwAViZjIwdhIPWUYT_AsA7SnUCLKN9HHH91qy4tMMo0WCbJS5dCvaqLrLKq_IApr0T-fTgojV7Z87PyXgznGu5vj6kb6ryG41-Z_RZgrxufLTYUMMldUI_yli1UA9GxU_EjQJKCAhnCpSD0hOVYviY7yrLP1z2x2n?width=1920&height=1634&cropmode=none"
 description: From some research, learning about build tools and graphics libraries is beneficial for my future roles in the games industry. This was a University assignment.
 legacy: true
+highlight: true
 tags:
 - personal
 - education

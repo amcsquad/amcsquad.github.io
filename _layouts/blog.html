@@ -13,14 +13,16 @@
             </div>
         </div>
 
+        <div id="results-container"></div>
+
         <!-- Blog Highlights Section -->
-        <div id="blog-highlights-section">
+        <div id="blog-highlights-section" class="highlight-section">
             <div class="container">
-                <h2 class="title is-3">Blog Highlights</h2>
+                <h2 class="title is-2 has-text-centered highlight-title" style="padding-bottom: 20px">Blog Highlights</h2>
                 <div class="columns is-multiline">
                     {% for post in site.posts %}
                     {% if post.highlight %}
-                    <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile" style="flex: auto !important;">
+                    <div class="column is-one-quarter-desktop" style="flex: auto !important;">
                         <div class="blog-highlight-card" data-tags="{{ post.tags | join: ', ' }}">
                             {% include blog-highlight-card.html %}
                         </div>
@@ -29,10 +31,7 @@
                     {% endfor %}
                 </div>
             </div>
-            <hr class="styled-hr">
         </div>
-
-        <div id="results-container"></div>
 
         <!-- Blog Cards Section -->
         <div id="blog-cards-section">

@@ -4,6 +4,7 @@ layout: post
 post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161234&authkey=%21AK1idUav8Uh3KfM&width=1920&height=1634"
 description: "I attended #GirlsTechWM 2022 to represent Sumo Digital. I helped run a game dev workshop with 2 colleagues, and did a talk for ~160 secondary school-aged students about how they can use their current school subjects to help them start up a portfolio for the Tech Industry."
 legacy: true
+highlight: true
 tags:
 - personal
 - education

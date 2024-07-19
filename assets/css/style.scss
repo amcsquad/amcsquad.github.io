@@ -537,14 +537,13 @@ a.navbar-item.is-active {
     overflow: hidden; /* Prevents overflow of content */
     border-radius: 5px; /* Optional: for rounded corners */
     transition: all 0.25s ease;
-    transform: scale(0.98);
     line-height: normal;
+    background-color: white;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 
     &:hover {
-        transform: scale(1);
         -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
         -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
@@ -572,6 +571,8 @@ a.navbar-item.is-active {
 .blog-highlight-card .content h1 {
     font-size: 1rem; /* Adjust font size as needed */
     line-height: 1.2;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: 0;
     margin-bottom: 0.5rem;
 }
@@ -580,6 +581,8 @@ a.navbar-item.is-active {
     font-size: 0.875rem; /* Adjust font size as needed */
     line-height: 1.2;
     margin: 0.25rem 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     overflow: hidden; /* Prevents overflow of content */
     text-overflow: ellipsis; /* Adds ellipsis for overflow text */
     display: -webkit-box;
@@ -593,7 +596,7 @@ a.navbar-item.is-active {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Number of lines to show */
     -webkit-box-orient: vertical;
-    height: 4.5rem; /* Adjust this value based on your line height and desired number of lines */
+    height: 3rem; /* Adjust this value based on your line height and desired number of lines */
 }
 
 #blog-highlights-section .columns {
@@ -618,4 +621,17 @@ a.navbar-item.is-active {
         flex: 1 0 100%; /* Take full width */
         max-width: 100%; /* Ensure full width */
     }
+}
+
+.highlight-section {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.highlight-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
