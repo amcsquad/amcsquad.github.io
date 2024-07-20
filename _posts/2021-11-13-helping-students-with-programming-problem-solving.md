@@ -5,9 +5,8 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161064&auth
 description: Shortly after volunteering to mentor at an Into Games event, I had found an opportunity to help students solve any problems with programming in a Gamejam using Twine, which is a tool I’ve not used before!
 legacy: true
 tags:
-- personal
-- education
-- improvement
+- Volunteering
+- Mentoring
 ---
 
 Helping students out who are new to games development is something I love doing.

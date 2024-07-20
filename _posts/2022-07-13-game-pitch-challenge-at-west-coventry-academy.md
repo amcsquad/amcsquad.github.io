@@ -5,9 +5,9 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161238&auth
 description: I attended West Coventry Academy to represent Sumo Digital. I helped run a game pitch day with some colleagues.
 legacy: true
 tags:
-- personal
-- education
-- sumo-digital
+- Volunteering
+- Running A Workshop
+- Sumo Digital
 ---
 
 ---

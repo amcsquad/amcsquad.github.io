@@ -5,11 +5,10 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161046&auth
 description: One morning, I woke up to an email titled 'Welcome to Jagex Games Studio' - I could barely believe it!
 legacy: true
 tags:
-- personal
-- jagex
-- unreal-engine
-- development
-- improvement
+- Jagex
+- C++ Programming
+- Unreal Engine
+- Internship/Placement
 ---
 
 One April morning, I woke up to a great surprise, I had gotten an email titled: *Welcome to Jagex Games Studio*, I was quite tired at the time so I had to read the email a few times to realise it was real.

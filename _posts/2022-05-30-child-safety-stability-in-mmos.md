@@ -5,8 +5,7 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161236&auth
 description: In this episode, Amy spoke to Laura, who works as a Director of community safety & stability at Roblox. They discussed her role and the different issues with online safety for children and how they can be solved!
 legacy: true
 tags:
-- gamedevlondon
-- podcast
+- Game Dev London Podcast
 ---
 
 ---

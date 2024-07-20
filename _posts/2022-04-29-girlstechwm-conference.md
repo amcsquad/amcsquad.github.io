@@ -6,9 +6,10 @@ description: "I attended #GirlsTechWM 2022 to represent Sumo Digital. I helped r
 legacy: true
 highlight: true
 tags:
-- personal
-- education
-- sumo-digital
+- Volunteering
+- Running A Workshop
+- Presenting A Lecture/Talk
+- Sumo Digital
 ---
 
 ---

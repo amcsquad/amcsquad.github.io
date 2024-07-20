@@ -173,7 +173,7 @@ a.navbar-item.is-active {
         }
 
         .column {
-            display: grid;
+            //display: grid;
 
             .image {
                 border-radius: 0.25rem;
@@ -343,7 +343,7 @@ a.navbar-item.is-active {
     }
 
     .tag {
-        margin: 0.15rem auto;
+        margin: 0.15rem auto
     }
 
     .content {
@@ -618,8 +618,8 @@ a.navbar-item.is-active {
     }
 
     .column {
-        flex: 1 0 100%; /* Take full width */
-        max-width: 100%; /* Ensure full width */
+        flex: 1 0 100%;
+        max-width: 100%; 
     }
 }
 
@@ -634,4 +634,37 @@ a.navbar-item.is-active {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .tag-filters .container {
+        padding: 0 15px; /* Add padding on the left and right */
+    }
+}
+
+// Tag Filter Buttons
+.tag-filter-button {
+    cursor: pointer;
+    margin: 0.2em;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+    &:hover {
+        background-color: #3273dc; // Adjust hover background color to match your theme
+        color: white; // Adjust hover text color
+    }
+}
+
+// Active Tag Filter Button
+.tag-filter-button.active {
+    border: 2px solid #3273dc; // Border to show the button is selected
+    background-color: #f0f8ff; // Light background to make it stand out
+    color: #3273dc; // Match text color with the border
+}
+
+// Reset Button
+.tag-filter-button.reset {
+    background-color: #e6b0aa;
+    padding: 0.3em 0.6em; // Add some padding
+    border-radius: 5px; // Rounded corners
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }

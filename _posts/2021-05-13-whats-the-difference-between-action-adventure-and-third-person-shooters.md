@@ -5,11 +5,7 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161037&auth
 description: This blog will compare and define the games Resident Evil 4, (2005) and Twilight Princess, (2006), and their respective genres.
 legacy: true
 tags:
-- misc
-- research
-- resident evil 4
-- zelda
-- twilight princess
+- Misc
 ---
 
 This blog will compare and define the games Resident Evil 4, (2005) and Twilight Princess, (2006), and their respective genres. These games both have multiple genres associated with them due to how broad they are in gameplay, but it is noticeably clear these games have a main genre for their chosen target audience.

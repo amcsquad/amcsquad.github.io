@@ -5,8 +5,8 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161098&auth
 description: In this blog, I talk about my process of setting up a games development course for a student I've began mentoring 1 to 1, and the process of helping him make a design document for a game which he wants to make.
 legacy: true
 tags:
-- mentoring
-- teaching
+- Mentoring
+- Game Design
 ---
 
 When I was a student back in high school, the subjects I had to learn were the usual English, French, Math, Science, etc.

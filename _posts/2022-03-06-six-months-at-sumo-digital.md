@@ -6,10 +6,8 @@ description: In August, I started my year-long placement at Sumo Leamington, and
 legacy: true
 highlight: true
 tags:
-- personal
-- sumo-digital
-- reflection
-- development
+- Sumo Digital
+- Internship/Placement
 ---
 
 ---

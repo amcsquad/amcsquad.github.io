@@ -5,9 +5,9 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161080&auth
 description: Back in July, I volunteered at Into Games to help a group of students with project management for designing and prototyping a mining game loop. This was my first ever mentoring experience.
 legacy: true
 tags:
-- personal
-- education
-- improvement
+- Volunteering
+- Mentoring
+- Project Management
 ---
 
 ---

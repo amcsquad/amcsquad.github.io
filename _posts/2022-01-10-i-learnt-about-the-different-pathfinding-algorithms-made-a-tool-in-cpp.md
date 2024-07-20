@@ -5,10 +5,9 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161220&auth
 description: Pathfinding algorithms have always been something which interests me, and so I decided to make myself a pathfinding tool!
 legacy: true
 tags:
-- study
-- research
-- development
-- improvement
+- C++ Programming
+- Algorithms
+- Project-Based Learning
 ---
 
 Pathfinding algorithms have always been something which interests me, and so I decided to make myself a pathfinding tool!

@@ -5,8 +5,7 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161161&auth
 description: Amy talks with Tiril (T) Schjerven (Concept Art Intern - Jagex) and Tom (Content Producer Intern - Into Games) about their journeys into the games industry and how their internships went!
 legacy: true
 tags:
-- gamedevlondon
-- podcast
+- Game Dev London Podcast
 ---
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1cDZYildC8tsyeT0XilsM5?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
