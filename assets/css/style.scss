@@ -173,7 +173,7 @@ a.navbar-item.is-active {
         }
 
         .column {
-            display: grid;
+            //display: grid;
 
             .image {
                 border-radius: 0.25rem;
@@ -343,7 +343,7 @@ a.navbar-item.is-active {
     }
 
     .tag {
-        margin: 0.15rem auto;
+        margin: 0.15rem auto
     }
 
     .content {
@@ -618,8 +618,8 @@ a.navbar-item.is-active {
     }
 
     .column {
-        flex: 1 0 100%; /* Take full width */
-        max-width: 100%; /* Ensure full width */
+        flex: 1 0 100%;
+        max-width: 100%; 
     }
 }
 
@@ -634,6 +634,12 @@ a.navbar-item.is-active {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .tag-filters .container {
+        padding: 0 15px; /* Add padding on the left and right */
+    }
 }
 
 // Tag Filter Buttons
@@ -657,16 +663,8 @@ a.navbar-item.is-active {
 
 // Reset Button
 .tag-filter-button.reset {
-    background-color: #e0f7fa; // Light blue background
-    color: #007bff; // Blue text color
-    border: 1px solid #007bff; // Blue border
+    background-color: #e6b0aa;
     padding: 0.3em 0.6em; // Add some padding
     border-radius: 5px; // Rounded corners
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-
-    &:hover {
-        background-color: #b2ebf2; // Darken the background on hover
-        color: #0056b3; // Darken the text color on hover
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Add a subtle shadow on hover
-    }
 }

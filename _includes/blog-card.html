@@ -10,11 +10,11 @@
                 <hr class="styled-hr">
                 {%- assign tags = post.tags -%}
                 {%- unless tags.size == 0 -%}
-                <p class="subtitle is-uppercase">
+                <p>
                     <i class="fas fa-tags"></i>
                     {% assign i = 0 %}
                     {% for tag in tags %}
-                    <span class="tag is-link">{{ tag }}</span>
+                    <span class="tag is-link tag-default">{{ tag }}</span>
                     {% endfor %}
                 </p>
                 {%- endunless -%}
