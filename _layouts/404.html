@@ -11,14 +11,14 @@ layout: compress
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-1 is-uppercase has-text-weight-bold has-text-white">
-                    {{page.title}}
+                    {{page.title | escape}}
                 </h1>
                 <h3 class="is-uppercase has-text-weight-medium is-marginless has-text-grey-light">
-                    {{content}}
+                    {{content | escape}}
                 </h3>
                 <hr class="styled-hr">
                 <div class="columns is-marginless is-inline-flex-desktop">
-                    <a href="{{site.url}}{{site.baseurl}}/"
+                    <a href="{{site.url | escape}}{{site.baseurl | escape}}/"
                         class="button is-white column is-rounded is-outlined is-uppercase has-text-weight-normal">Home</a>
                     </a>
                 </div>

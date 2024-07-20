@@ -45,7 +45,7 @@
         <!-- Blog Cards Section -->
         <div id="blog-cards-section">
             {% for post in site.posts %}
-            <div class="blog-card" data-tags="{{ post.tags | join: ', ' }}">
+            <div class="blog-card" data-tags="{{ post.tags | join: ', ' | escape }}">
                 {% include blog-card.html %}
             </div>
             {% endfor %}
@@ -55,7 +55,7 @@
 
     <!--Footer begins here-->
     {% include footer.html %}
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
+    <script src="{{site.url | escape}}{{site.baseurl | escape}}/assets/js/simple-jekyll-search.js"></script>
 
     <script>
     const tagCategories = {

@@ -2,16 +2,16 @@
     {% for project in site.data.personal-projects %}
     <div class="column has-text-centered is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
          id="project-card">
-        <a href="{{ site.baseurl }}{{ project.link }}" target="_blank">
+        <a href="{{ site.baseurl | escape }}{{ project.link | escape }}" target="_blank">
             <div class="has-background-black card">
-                <figure class="image is-4by3" style="background-image: url({{ project.image }});">
+                <figure class="image is-4by3" style="background-image: url({{ project.image | escape }});">
                 </figure>
                 <div class="card-content">
-                    <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
+                    <h1 class="title has-text-white is-size-4">{{ project.name | escape }}</h1>
                     <!-- Date Range Section -->
                     {% if project.start-date and project.end-date %}
                     <div class="date-range" style="margin-top: 5px;">
-                        <p class="is-size-7 has-text-grey-light">{{ project.start-date }} - {{ project.end-date }}</p>
+                        <p class="is-size-7 has-text-grey-light">{{ project.start-date | escape }} - {{ project.end-date | escape }}</p>
                     </div>
                     {% endif %}
                     <div style="margin-top: 10px;">
@@ -21,9 +21,9 @@
                             {% for tag in tags %}
                             {% assign tag_strip = tag | strip %}
                             {% if tag_strip == "Solo" %}
-                            <span class="tag" style="font-size: 0.60rem; margin-bottom: 0.25rem; background-color: gold; color: black;">{{ tag_strip }}</span>
+                            <span class="tag" style="font-size: 0.60rem; margin-bottom: 0.25rem; background-color: gold; color: black;">{{ tag_strip | escape }}</span>
                             {% else %}
-                            <span class="tag is-link" style="font-size: 0.60rem; margin-bottom: 0.25rem;">{{ tag_strip }}</span>
+                            <span class="tag is-link" style="font-size: 0.60rem; margin-bottom: 0.25rem;">{{ tag_strip | escape }}</span>
                             {% endif %}
                             {% endfor %}
                         </p>

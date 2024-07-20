@@ -8,17 +8,17 @@
         <div class="container columns">
             <!--Name Section-->
             <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
+                <a href="{{site.url | escape}}{{site.baseurl | escape}}/#about">
                     <div class="columns">
                         <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
                             <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
+                                <img class="is-rounded" src="{{site.author-image | escape}}">
                             </figure>
                         </div>
                         <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
+                            <h5 class="has-text-grey-lighter">{{site.author-name | escape}}</h5>
                             <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 140 }}</p>
+                                <p>{{site.author-about | truncate: 140 | escape }}</p>
                             </div>
                         </div>
                     </div>
@@ -30,13 +30,13 @@
                 <h3>Follow Me</h3>
                 <div class="social-media-icons">
                     {% unless site.twitter_username == %}
-                    <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank" class="has-text-grey"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com/intent/user?screen_name={{site.twitter_usernam | escapee}}" target="_blank" class="has-text-grey"><i class="fab fa-twitter"></i></a>
                     {% endunless %}
                     {% unless site.instagram_username ==  %}
-                    <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-grey"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.instagram.com/{{site.instagram_username | escape}}" target="_blank" class="has-text-grey"><i class="fab fa-instagram"></i></a>
                     {% endunless %}
                     {% unless site.linkedin_username ==  %}
-                    <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-grey"><i class="fab fa-linkedin"></i></a>
+                    <a href="http://www.linkedin.com/in/{{site.linkedin_username | escape}}" target="_blank" class="has-text-grey"><i class="fab fa-linkedin"></i></a>
                     {% endunless %}
                     {% unless site.github_username ==  %}
                     <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-grey"><i class="fab fa-github"></i></a>
@@ -49,7 +49,7 @@
                 <h3>Recent Posts</h3>
                 {% for post in site.posts offset: 0 limit:3 %}
                 <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
+                    <a href="{{post.url | absolute_url | escape}}">{{post.title | escape}}</a>
                 </li>
                 {% endfor %}
             </div>
