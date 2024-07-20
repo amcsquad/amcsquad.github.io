@@ -4,12 +4,13 @@
             <div class="columns">
                 <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
                     <figure class="image">
-                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
+                        <img class="is-rounded" src="{{ site.author-image | escape }}" alt="{{ site.author-name | escape }}">
                     </figure>
                 </div>
                 <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                    <p>{{site.author-about}}</p>
+                    <p>{{ site.author-about | strip_html | escape }}</p>
                 </div>
             </div>
         </div>
+    </div> <!-- Closing div for hero-body -->
 </section>
