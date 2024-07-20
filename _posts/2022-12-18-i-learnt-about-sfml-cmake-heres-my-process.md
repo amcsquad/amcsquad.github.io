@@ -6,10 +6,10 @@ description: From some research, learning about build tools and graphics librari
 legacy: true
 highlight: true
 tags:
-- personal
-- education
-- research
-- development
+- C++ Programming
+- SFML
+- CMake
+- Project-Based Learning
 ---
 
 # Research, Analysis, & Justification for Choice of API

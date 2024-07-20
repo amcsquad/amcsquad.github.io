@@ -5,8 +5,10 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161144&auth
 description: I’ve been mentoring Thomas in Games Development, and his next step after making his GDD was designing! I helped him with this process and in this blog, I talk about his work.
 legacy: true
 tags:
-- mentoring
-- teaching
+- Mentoring
+- Game Design
+- Greyboxing
+- Roblox
 ---
 
 ---

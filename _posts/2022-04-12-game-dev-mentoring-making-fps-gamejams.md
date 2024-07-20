@@ -5,11 +5,9 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161171&auth
 description: After working on his prophunt game for a while, Thomas wanted to try out different game ideas, and so I helped him with making some of his own FPS Gamejam Games inspired by some games he enjoyed playing!
 legacy: true
 tags:
-- mentoring
-- education
-- teaching
-- reflection
-- development
+- Mentoring
+- Game Jams
+- Unity
 ---
 
 ---

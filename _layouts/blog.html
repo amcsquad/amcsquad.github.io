@@ -33,6 +33,15 @@
             </div>
         </div>
 
+        <!-- Tag Filters Section -->
+        <div class="tag-filters">
+            <div class="container">
+                <input type="checkbox" id="hideMiscPosts" name="hideMiscPosts" checked>
+                <label for="hideMiscPosts">Hide Miscellaneous Posts</label>
+                <div id="tag-filters-container" class="tags"></div>
+            </div>
+        </div>
+
         <!-- Blog Cards Section -->
         <div id="blog-cards-section">
             {% for post in site.posts %}
@@ -49,67 +58,123 @@
     <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
 
     <script>
-    function generateTags(tags) {
-        if (!tags) return '';
-        let tagsArray = tags.split(', ');
-        let tagsHtml = '';
-        tagsArray.forEach(tag => {
-            tagsHtml += `<span class="tag is-link">${tag.trim()}</span> `;
+    // Collect tags and their counts
+    const tagCounts = {};
+    document.querySelectorAll('.blog-card').forEach(card => {
+        const tags = card.getAttribute('data-tags').split(', ');
+        tags.forEach(tag => {
+            if (!tagCounts[tag]) tagCounts[tag] = 0;
+            tagCounts[tag]++;
         });
-        return tagsHtml;
-    }
-
-    function filterPosts() {
-        const hideMiscPosts = document.getElementById('hideMiscPosts').checked;
-        const blogCards = document.querySelectorAll('.blog-card');
-        blogCards.forEach(card => {
-            const tags = card.getAttribute('data-tags').split(', ');
-            if (hideMiscPosts && (tags.includes('gamedevlondon') || tags.includes('misc'))) {
-                card.style.display = 'none';
-            } else {
-                card.style.display = '';
-            }
-        });
-    }
-
-    document.getElementById('hideMiscPosts').addEventListener('change', filterPosts);
-
-    SimpleJekyllSearch({
-        searchInput: document.getElementById('search'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '{{site.url}}{{site.baseurl}}/search.json',
-        searchResultTemplate: `
-            <div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card">
-                <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
-                    <div class="image is-16by9" style="background-image: url({image});"></div>
-                </div>
-                <a href="{url}">
-                    <div class="column has-text-left-desktop has-text-left-tablet">
-                        <h1 class="title is-size-4-touch">{title}</h1>
-                        <div class="content has-text-grey">
-                            {description}
-                            <hr class="has-background-grey">
-                            <p class="subtitle is-uppercase">
-                                <i class="fas fa-tags"></i>
-                                {tags}
-                            </p>
-                            <span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> |
-                            <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read
-                        </div>
-                    </div>
-                </a>
-            </div>`,
-        noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
-        fuzzy: true,
-        templateMiddleware: function(prop, value) {
-            if (prop === 'tags') {
-                return generateTags(value);
-            }
-            return value;
-        }
     });
 
-    window.addEventListener('load', filterPosts);
+        function updateTagButtons() {
+            const hideMiscPosts = document.getElementById('hideMiscPosts').checked;
+            const tagFiltersContainer = document.getElementById('tag-filters-container');
+            tagFiltersContainer.innerHTML = '';
+
+            Object.keys(tagCounts).forEach(tag => {
+                if (hideMiscPosts && (tag === 'Game Dev London Podcast' || tag === 'Misc')) {
+                    return;
+                }
+
+                const button = document.createElement('span');
+                button.innerText = `${tag} (${tagCounts[tag]})`;
+                button.classList.add('tag', 'tag-filter-button');
+                button.setAttribute('data-tag', tag);
+                tagFiltersContainer.appendChild(button);
+            });
+
+            const resetButton = document.createElement('span');
+            resetButton.innerText = 'Reset Filters';
+            resetButton.classList.add('tag', 'tag-filter-button', 'reset'); // Add 'reset' class here
+            resetButton.addEventListener('click', () => {
+                document.querySelectorAll('.tag-filter-button').forEach(btn => btn.classList.remove('active'));
+                filterPosts();
+            });
+            tagFiltersContainer.appendChild(resetButton);
+
+            document.querySelectorAll('.tag-filter-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.tag-filter-button').forEach(btn => btn.classList.remove('active'));
+                    if (!button.classList.contains('reset')) { // Only add active class if it's not the reset button
+                        button.classList.add('active');
+                    }
+                    filterPosts();
+                });
+            });
+        }
+
+        // Filter posts based on selected tag
+        function filterPosts() {
+            const selectedTag = document.querySelector('.tag-filter-button.active')?.getAttribute('data-tag');
+            const hideMiscPosts = document.getElementById('hideMiscPosts').checked;
+
+            document.querySelectorAll('.blog-card').forEach(card => {
+                const tags = card.getAttribute('data-tags').split(', ');
+                const hasSelectedTag = !selectedTag || tags.includes(selectedTag);
+                const isMisc = tags.includes('Game Dev London Podcast') || tags.includes('Misc');
+
+                if ((hideMiscPosts && isMisc) || !hasSelectedTag) {
+                    card.style.display = 'none';
+                } else {
+                    card.style.display = '';
+                }
+            });
+
+            updateTagButtons();
+        }
+
+        document.getElementById('hideMiscPosts').addEventListener('change', filterPosts);
+
+        function generateTags(tags) {
+            if (!tags) return '';
+            let tagsArray = tags.split(', ');
+            let tagsHtml = '';
+            tagsArray.forEach(tag => {
+                tagsHtml += `<span class="tag is-link">${tag.trim()}</span> `;
+            });
+            return tagsHtml;
+        }
+
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '{{site.url}}{{site.baseurl}}/search.json',
+            searchResultTemplate: `
+        <div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card">
+            <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
+                <div class="image is-16by9" style="background-image: url({image});"></div>
+            </div>
+            <a href="{url}">
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">{title}</h1>
+                    <div class="content has-text-grey">
+                        {description}
+                        <hr class="has-background-grey">
+                        <p class="subtitle is-uppercase">
+                            <i class="fas fa-tags"></i>
+                            {tags}
+                        </p>
+                        <span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> |
+                        <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read
+                    </div>
+                </div>
+            </a>
+        </div>`,
+            noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
+            fuzzy: true,
+            templateMiddleware: function (prop, value) {
+                if (prop === 'tags') {
+                    return generateTags(value);
+                }
+                return value;
+            }
+        });
+
+        window.addEventListener('load', () => {
+            filterPosts();
+        });
     </script>
 
 </body>

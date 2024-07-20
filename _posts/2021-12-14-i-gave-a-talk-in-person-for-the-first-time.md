@@ -5,9 +5,8 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161113&auth
 description: I delivered a talk to students in my old high school, this was my first time talking in front of a large audience in person, as up to this point, a lot of the stuff I had done was online due to covid!
 legacy: true
 tags:
-- personal
-- education
-- improvement
+- Volunteering
+- Presenting A Lecture/Talk
 ---
 
 ---

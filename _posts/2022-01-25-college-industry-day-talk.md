@@ -5,9 +5,8 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161118&auth
 description: I got invited back to my old college to talk to students studying Games Development at an industry day, this talk was a few months after my first talk, so I was able to reflect upon my speaking and presentation from then.
 legacy: true
 tags:
-- personal
-- education
-- improvement
+- Volunteering
+- Presenting A Lecture/Talk
 ---
 
 ---

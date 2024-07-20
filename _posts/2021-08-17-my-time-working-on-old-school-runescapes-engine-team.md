@@ -5,10 +5,10 @@ post-image: "https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161052&auth
 description: I was given the opportunity to work on engine programming for Old School RuneScape's C++ Client, this helped me learn lots about how game engines work.
 legacy: true
 tags:
-- personal
-- jagex
-- development
-- improvement
+- Jagex
+- C++ Programming
+- Proprietary Engine
+- Internship/Placement
 ---
 
 This blog is a continuation of my previous blog when I talked about my first two months at Jagex on the Unannounced MMORPG team.
