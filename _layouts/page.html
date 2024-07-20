@@ -13,11 +13,11 @@ layout: compress
             <div class="container has-text-centered" id="page-section">
                 <div class="section">
                     <h1 class="title is-uppercase has-text-weight-bold responsive-title">
-                        {{page.title}}
+                        {{ page.title | escape }}
                     </h1>
                     <hr class="has-background-black">
                     <div class="content is-marginless">
-                        {{ content }}
+                        {{ content | escape }}
                     </div>
                 </div>
             </div>

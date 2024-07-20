@@ -7,23 +7,22 @@
         </video>
         <div class="container">
             <h1 class="title has-text-white is-size-1 has-text-weight-bold">
-                Hi, I am {{site.title | escape}}
+                Hi, I am {{ site.title | escape }}
             </h1>
             <h3 class="subtitle has-text-white-bis has-text-weight-medium is-marginless">
-                {{site.description | escape}}
+                {{ site.description | escape }}
             </h3>
             <hr class="styled-hr">
             <div class="container columns is-centered">
                 <div>
-                    <a href="{{site.url | escape}}{{site.baseurl | escape}}/projects"
+                    <a href="{{ site.url | escape }}{{ site.baseurl | escape }}/projects"
                        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">
                         Projects
                     </a>
                 </div>
                 <div>
-                    <a href="{{site.url | escape}}{{site.baseurl | escape}}/blog"
+                    <a href="{{ site.url | escape }}{{ site.baseurl | escape }}/blog"
                        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Blog</a>
-                    </a>
                 </div>
             </div>
         </div>

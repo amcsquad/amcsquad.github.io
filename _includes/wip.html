@@ -115,18 +115,18 @@
             </video>
             <div class="wip-container">
                 <div class="wip-content">
-                    <h1>{{page.title | escape}}</h1>
+                    <h1>{{ page.title | escape }}</h1>
                     <h3>This page is currently under development as I transition my portfolio to a new format.</h3>
                     {% if page.legacylink %}
                     <h3><i>There is a legacy version of this page available to view.</i></h3>
                     {% endif %}
-                    <a href="{{site.url | escape}}{{site.baseurl | escape}}/" class="button is-primary is-rounded">Home</a>
+                    <a href="{{ site.url | escape }}{{ site.baseurl | escape }}/" class="button is-primary is-rounded">Home</a>
                     {% if page.legacylink %}
-                    <a href="{{page.legacylink | escape}}" target="_blank" class="button is-secondary is-rounded">View Legacy Page</a>
+                    <a href="{{ page.legacylink | escape }}" target="_blank" class="button is-secondary is-rounded">View Legacy Page</a>
                     {% endif %}
                 </div>
                 <div class="wip-image">
-                    <img src="https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161267&authkey=%21AJMkRs4M5wBdofk&width=256&height=256" alt="WIP Image">
+                    <img src="" alt="WIP Image">
                 </div>
             </div>
         </div>
