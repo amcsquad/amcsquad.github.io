@@ -16,7 +16,7 @@ tags:
 
 This blog is part of a blog series where I talked about my Game Development Mentoring sessions!
 
-As mentioned in the [previous blog post](/blog/game-dev-mentoring/greyboxing-design), Thomas wanted to try out other game ideas, as the prop hunt game was a big project, and he wanted a change of pace.
+As mentioned in the [previous blog post](/blog/game-dev-mentoring-greyboxing-design), Thomas wanted to try out other game ideas, as the prop hunt game was a big project, and he wanted a change of pace.
 
 So we can quickly and iteratively try out lots of different game ideas, I proposed the idea of doing 3-hour gamejams with him! Thomas hadn’t done a gamejam, and our sessions are an hour and a half each, so the plan was to spend 2 sessions on each game.
 
@@ -96,3 +96,12 @@ And to finish off the game, Thomas worked on an icon, and I taught him how to bu
 I think this gamejam approach to Thomas’s sessions really helps him learn a lot quicker, and try out different game ideas, as he had lots of things he wanted to try out! I’m really happy with the work he has produced, and when chatting to him about this, he really likes the gamejam approach to these sessions, so in the future, we will be trying out gamejams in Roblox, as that is what he wants to use more of!
 
 ---
+
+### Related Blogs
+
+[Game Dev Mentoring - Design Documents](/blog/game-dev-mentoring-design-documents) - November 21, 2021  
+In this blog, I talk about my process of setting up a games development course for a student I've began mentoring 1 to 1, and the process of helping him make a design document for a game which he wants to make.
+
+[Game Dev Mentoring - Greyboxing & Design](/blog/game-dev-mentoring-greyboxing-design) - Feb 21, 2022  
+I’ve been mentoring Thomas in Games Development, and his next step after making his GDD was designing! I helped him with this process and in this blog, I talk about his work.
+

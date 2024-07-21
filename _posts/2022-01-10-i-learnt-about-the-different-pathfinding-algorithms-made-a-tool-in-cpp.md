@@ -10,8 +10,6 @@ tags:
 - Project-Based Learning
 ---
 
-Pathfinding algorithms have always been something which interests me, and so I decided to make myself a pathfinding tool!
-
 ### Proposal
 
 For the project, I wrote a proposal, and for this proposal document, I include many things, like the concept of what I will be doing, and videos and photographs or programs which inspire me.

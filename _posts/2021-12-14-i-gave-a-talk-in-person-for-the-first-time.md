@@ -11,6 +11,11 @@ tags:
 
 ---
 
+**Event:** Highschool Industry Talk  
+**Date of event:** November 2021
+
+---
+
 My younger brother is still in school, and he attends the same high school which I used to go to a few years ago, and recently, my dad informed me of a section in the school newspapers that mentioned video games and the games industry!
 
 This was really good news, and it made me really happy as when I was in high school, the gaming industry wasn’t mentioned at all! This was something I previously wrote about, and how if I had known more about the industry, I may have been interested in it sooner than I was.
@@ -18,11 +23,6 @@ This was really good news, and it made me really happy as when I was in high sch
 As I really want to help to get more diverse and younger audiences interested in games development, I decided that I wanted to go into the school and explain to students how much fun games development is! – And that’s exactly what I have done!
 
 In this blog, I talk about my approach and more reasons as to why I wanted to do this.
-
----
-
-**Event:** Highschool Industry Talk  
-**Date of event:** November 2021
 
 ---
 

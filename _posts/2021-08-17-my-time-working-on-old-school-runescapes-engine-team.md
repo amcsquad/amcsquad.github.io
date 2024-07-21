@@ -11,17 +11,19 @@ tags:
 - Internship/Placement
 ---
 
-This blog is a continuation of my previous blog when I talked about my first two months at Jagex on the Unannounced MMORPG team.
-**I would recommend that you read that one before this!**
-
-[What I've Learnt Working On Jagex's Unannounced MMORPG](/blog/what-ive-learnt-working-on-jagexs-unannounced-mmorpg) - Jul 17, 2021
-
 ---
 
 During the final month of my internship at Jagex, I worked on **Old School RuneScape** on their **Engine team** where my job was to work on the **enhancement of the RuneScape engine** and associated systems.
 My last month went by very fast but despite that, I managed to learn loads and do loads of new things!
 
 As I had already been at Jagex for two months the onboarding wasn't as long, I had a few introductory calls with the Engine team to meet everyone and learn about what they work on.
+
+---
+
+This blog is a continuation of my previous blog when I talked about my first two months at Jagex on the Unannounced MMORPG team.
+**I would recommend that you read that one before this!**
+
+[What I've Learnt Working On Jagex's Unannounced MMORPG](/blog/what-ive-learnt-working-on-jagexs-unannounced-mmorpg) - Jul 17, 2021
 
 ---
 

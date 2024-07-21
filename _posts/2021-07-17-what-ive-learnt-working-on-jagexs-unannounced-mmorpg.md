@@ -80,7 +80,7 @@ We also talked about the painting ['A Room In New York'](https://en.wikipedia.or
 
 Another activity I participated in was the **Into Games Virtual Work Experience** - I volunteered through Jagex to help **mentor college students**, and they had to work as a team to produce a game design document and game prototype in accordance to a brief, this was the first time I've ever done mentoring, and although these students were only a few years younger than me, and I was an intern, so I was new to the games industry, I decided to bite the bullet and try my hand at mentoring.
 
-I realised through this that I really enjoy it! I prepared a handful of slides for each session with the students, and they were able to produce some great work by the end of the week! I talk more about my experience with this mentoring in this blog post [here](/blog/guiding-students-through-designing-prototying-a-game/)
+I realised through this that I really enjoy it! I prepared a handful of slides for each session with the students, and they were able to produce some great work by the end of the week! I talk more about my experience with this mentoring in this blog post [here](/blog/guiding-students-through-designing-prototyping-a-game)
 
 I was also able to go to Cambridge to check out the Jagex studio too! An **Intern Social Day** was arranged for all of the interns to meet up, have a tour around the studio, meet some people from Jagex and look around Cambridge!
 
