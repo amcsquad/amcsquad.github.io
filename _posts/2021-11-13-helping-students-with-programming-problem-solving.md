@@ -7,19 +7,22 @@ legacy: true
 tags:
 - Volunteering
 - Mentoring
+- Twine
 ---
-
-Helping students out who are new to games development is something I love doing.
-
-I previously [helped out some college students with designing and prototyping a game](/blog/guiding-students-through-designing-prototying-a-game/) and I enjoyed it so much that I decided to put myself forward to help some more students out a week or two later!
-
-What I was doing was helping a class of college students out with their own Gamejams, where they used **Twine** to make a game based around student loans.
-My job was to help the students **find resources**, **manage their workload**, **give feedback**, and **help solve any problems they had with programming**!
 
 ---
 
 **Event:** SideFest Twine GameJam  
 **Date of event:** July 2021
+
+---
+
+Helping students out who are new to games development is something I love doing.
+
+I previously [helped out some college students with designing and prototyping a game](/blog/guiding-students-through-designing-prototyping-a-game) and I enjoyed it so much that I decided to put myself forward to help some more students out a week or two later!
+
+What I was doing was helping a class of college students out with their own Gamejams, where they used **Twine** to make a game based around student loans.
+My job was to help the students **find resources**, **manage their workload**, **give feedback**, and **help solve any problems they had with programming**!
 
 ---
 
@@ -78,7 +81,7 @@ And as I’ve written this blog a few months after I had done this, I’ve taken
 
 ---
 
-[Guiding Students Through Designing & Prototyping a Game](/blog/guiding-students-through-designing-prototying-a-game/) - Nov 17, 2021  
+[Guiding Students Through Designing & Prototyping a Game](/blog/guiding-students-through-designing-prototyping-a-game) - Nov 17, 2021  
 Back in July, I volunteered at Into Games to help a group of students with project management for designing and prototyping a mining game loop. This was my first ever mentoring experience.
 
 [Being a Guest Speaker At a Highschool](/blog/i-gave-a-talk-in-person-for-the-first-time) - Dec 14, 2021  

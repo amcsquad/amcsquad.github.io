@@ -116,3 +116,13 @@ Throughout the game’s development, we will be adding more to the Game Design D
 I’m really enjoying my time helping out Thomas with designing and making his game! It’s helping me learn how to develop my **teaching, confidence, and speaking skills**, and it’s been good fun to cater every session toward his interests.
 
 I’m happy I’ve helped Thomas learn more about games development!
+
+---
+
+### Related Blogs
+
+[Game Dev Mentoring - Greyboxing & Design](/blog/game-dev-mentoring-greyboxing-design) - Feb 21, 2022  
+I’ve been mentoring Thomas in Games Development, and his next step after making his GDD was designing! I helped him with this process and in this blog, I talk about his work.
+
+[Game Dev Mentoring - Making FPS Gamejams](/blog/game-dev-mentoring-making-fps-gamejams) - April 12, 2022  
+After working on his prophunt game for a while, Thomas wanted to try out different game ideas, and so I helped him with making some of his own FPS Gamejam Games inspired by some games he enjoyed playing!

@@ -9,6 +9,7 @@ tags:
 - Game Design
 - Greyboxing
 - Roblox
+- Lua
 ---
 
 ---
@@ -87,7 +88,24 @@ There’s more which we can add in, but we left it there for now!
 
 ### Prototype Prop Script
 
-![Prop Script Header](https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2161150&authkey=%21APgI3h8HpxR131Y&width=662&height=246)
+{% highlight lua %}
+local model = script.Parent
+local prompt = model.Prompt.ProximityPrompt
+
+prompt.Triggered:Connect(function(player)
+	print("Works")
+	local oldCharacter = player.Character
+	local morphModel = model:FindFirstChildOfClass("Model")
+	local newCharacter = morphModel:Clone()
+	
+	newCharacter.HumanoidRootPart.Anchored = false
+	newCharacter:SetPrimaryPartCFrame(oldCharacter.PrimaryPart.CFrame)
+
+
+	player.Character = newCharacter
+	newCharacter.Parent = workspace
+end)
+{% endhighlight %}
 
 Thinking ahead, I spent some of my own time working on the main mechanics for the game, the prop swapping. Currently, we aren’t at the stage to start adding mechanics into the game, but I was still new to Lua, and that language is used for Roblox games, so I had to get some practice in it!
 
@@ -108,3 +126,14 @@ As we were taking our time on greyboxing and design, I decided it was best if we
 I’m really happy with how the greyboxing turned out! The outdoors hub world is my favorite, Thomas has done such a great job!
 
 I also discussed with him what he thinks of the game so far, and he said that he wanted to try out some other game ideas! So, I will be restructuring our sessions a bit so we can do something like a mini-game jam each session to try out other game ideas! This prop hunt game will be put on the side for now as we try out some other ideas using different tools outside of Roblox!
+
+---
+
+### Related Blogs
+
+[Game Dev Mentoring - Design Documents](/blog/game-dev-mentoring-design-documents) - November 21, 2021  
+In this blog, I talk about my process of setting up a games development course for a student I've began mentoring 1 to 1, and the process of helping him make a design document for a game which he wants to make.
+
+[Game Dev Mentoring - Making FPS Gamejams](/blog/game-dev-mentoring-making-fps-gamejams) - April 12, 2022  
+After working on his prophunt game for a while, Thomas wanted to try out different game ideas, and so I helped him with making some of his own FPS Gamejam Games inspired by some games he enjoyed playing!
+

@@ -50,9 +50,9 @@ Breaking down the sub-genres, an adventure game is a video game in which the pla
 - **Movement:**
   - In Resident Evil 4 (RE4), the player's movement is **realistic**, and their actions; like shooting a gun and swinging a dagger - are **slow**, whereas, in The Legend of Zelda: Twilight Princess, the player has much **faster combat**, but **realistic player movement akin to Resident Evil 4.**
 
-- **Internal Economies:**
-  - Another comparison which can be made between these games is the internal economies. In Resident Evil 4, the player has access to an **in-game currency called 'Peseta'**, which can be **earnt and found around the game**, this can be used to buy **weapons, upgrades, and ammo**, likewise, Twilight Princess has an **in-game currency called 'Rupees'** which can also be **earnt and found around the game to buy similar wares.**
-
+- **Internal-Economies:**
+  - Another comparison which can be made between these games is the internal economies. In Resident Evil 4, the player has access to an **in-game currency called 'Peseta'**, which can be **earned and found around the game**. This can be used to buy **weapons, upgrades, and ammo**. Likewise, Twilight Princess has an **in-game currency called 'Rupees'** which can also be **earned and found around the game to buy similar wares**.
+	
 - **Progression:**
   - For progression in Resident Evil 4, Leon, who is the main protagonist, has to **explore a village, solve puzzles and defeat enemies**, the progression for **Twilight Princess is very similar**, the only difference being the **addition of dungeons to explore and solve puzzles in.**
 
@@ -62,11 +62,11 @@ Breaking down the sub-genres, an adventure game is a video game in which the pla
 - **Difficulty:**
   - Third Person Shooters are often **fast-paced, and difficult to play**, however, a handful of them have stories following them. The Third Person Shooter genre may be **harder for a player who has more interest in narrative-focused games**, and developers cater to this audience by putting in an **easier mode**. Series like Resident Evil have an 'Easy' mode, and sometimes these easy modes make the game feel 'more like a walk in the park than a zombie outbreak.' (Failde, 2020), and this is common amongst other Third Person Shooters too. In comparison, Action Adventure games are **fast-paced and fun** too, but they are **not as difficult to play**. The Action Adventure genre is **easy for many players to play as they are developed with a much broader audience in mind**, these games **do not really have a difficulty setting due to this**. Because of how broad the Action Adventure genre is, many games follow the same gameplay mechanics, and the same stories as they do not want to make their games too difficult for their target audience, much like Sterling, (2011) states, for The Legend of Zelda; 'there's no denying that the game's sequence of events, progression, and basic plot are nearly always the same'
 
-- **Traversal & Narrative:**
+- **Traversal/Narrative:**  
   - Resident Evil 4's traversal mainly relies on **stealth and action with a sprinkle of puzzles** which allow the player to **progress through the story into new areas**, in most sections of the game, **action is optional**, which leaves the player with the option of being **stealthy**, which is a great way to allow them to portray the main character, Leon in their own way. In comparison Twilight Princess's traversal is very **open-world**, allowing the player to **explore, and to progress the story**, the player must go dungeon-to-dungeon in a **linear fashion**. Linearity in exploration is a common way to tell a story in games, as it allows the story to be told the same way for every player.
   - Resident Evil 4's story is **heavily focused on** throughout the game as the player is **always progressing toward the goal through puzzles and fighting bosses**, with **no distracting side quests.** In comparison, in Twilight Princess, the story is also focused on in the same linear fashion, but the player may come across **optional side-quests**, which is something that Resident Evil 4 does not have.
 
-- **Puzzles & Challenges:**
+- **Puzzles/Challenges:**  
   - The puzzles in Resident Evil 4 are **built into the world**, whether that be a lock and key which the player needs to locate through progressing through an area or finding out the pin to a safe through reading clues found throughout the environment. The entire challenge of Resident Evil 4 is approaching, and **seeing the puzzles for the first time**, subsequent playthroughs are not as challenging as the first because of this. In comparison Within the dungeons of Twilight Princess, the player must **solve puzzles, and fight bosses to proceed**, which is remarkably similar to the pattern which Resident Evil 4 takes, and these **dungeons and bosses are requirements within the game to get further into the story.**
 
 ### The Progression Between The Games

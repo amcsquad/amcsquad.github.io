@@ -11,6 +11,11 @@ tags:
 
 ---
 
+**Event:** Northbrook College Games Industry Day  
+**Date of Event:** January 2022
+
+---
+
 
 When I just finished my GCSEs, I felt a little lost in where I wanted to go in life. I didn’t know what career path I wanted to go down, but I always found myself doing creative subjects! I loved art and video games, so I decided to go to college and do a Games Development course!
 
@@ -21,11 +26,6 @@ A lot of the stuff I learned from the beginning was studying in my own time and 
 Every year, the course hosts an Industry Day where people working in the Games Industry come in and do presentations to give the students more of an insight into the industry. I loved these industry days, and I still talk to some of the people who did talks when I was a student there!
 
 Two years after I graduated from my college, I got invited to do a talk at the industry day – and this was exciting!
-
----
-
-**Event:** Northbrook College Games Industry Day  
-**Date of Event:** January 2022
 
 ---
 
