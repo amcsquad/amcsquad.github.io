@@ -49,11 +49,14 @@ comments: true
                         </p>
                         {% endunless %}
                         {% assign words = content | number_of_words %}
+                        {% assign reading_time = words | divided_by:180 %}
                         {% unless content.size == 0 %}
                         <p class="subtitle is-uppercase">
-                            <i class="fas fa-clock"></i> <b class="has-text-link">
-                                {{ words | divided_by:180 | escape }} min
-                            </b>READ
+                            {% if reading_time <= 1 %}
+                            <i class="fas fa-photo-video"></i> <b class="has-text-link">Multimedia</b>
+                            {% else %}
+                            <i class="fas fa-clock"></i> <b class="has-text-link">{{ reading_time | escape }} min</b> READ
+                            {% endif %}
                         </p>
                         {% endunless %}
                     </div>

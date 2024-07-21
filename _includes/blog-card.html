@@ -18,7 +18,13 @@
                 </p>
                 {%- endunless -%}
                 <span class="has-text-grey">Published on <span class="has-text-weight-semibold">{{ post.date | date: "%-B %d, %Y" | escape }}</span></span> |
-                <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{% assign words = post.content | number_of_words %}{{ words | divided_by:180 | escape }} min</span> read
+                {% assign words = post.content | number_of_words %}
+                {% assign reading_time = words | divided_by:180 %}
+                {% if reading_time <= 1 %}
+                <i class="fas fa-photo-video"></i> <span class="has-text-weight-semibold">Multimedia</span>
+                {% else %}
+                <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{{ reading_time | escape }} min</span> read
+                {% endif %}
                 {% if post.legacy %} | <span class="tag"> Legacy Blog</span> {% endif %}
             </div>
         </div>
