@@ -1,0 +1,78 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <style>
+        .experience-card .title {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .experience-card .subtitle-org {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .experience-card .subtitle {
+            margin-bottom: 1rem;
+            margin-top: .5rem !important;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .column.is-two-fifths-mobile {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include navbar.html %}
+
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered" id="page-section">
+                <div class="section">
+                    <h1 class="title is-uppercase has-text-weight-bold responsive-title">
+                        Volunteering
+                    </h1>
+                    <hr class="has-background-black">
+                    <div class="columns is-centered is-multiline is-mobile">
+                        {% for experience in site.data.volunteering %}
+                        <div class="column has-text-centered is-marginless is-one-third-widescreen is-one-third-desktop is-one-third-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch">
+                            <div class="card has-background-white-ter experience-card" id="experience-card">
+                                {% if experience.image %}
+                                <div class="card-image">
+                                    <figure class="image is-2by1">
+                                        <img src="{{ experience.image }}" alt="{{ experience.role }}" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </figure>
+                                </div>
+                                {% endif %}
+                                <div class="card-content">
+                                    <h2 class="title">{{ experience.role }}</h2>
+                                    <h3 class="subtitle-org">{{ experience.organisation }}</h3>
+                                    <p class="subtitle">{{ experience.date }}</p>
+                                    <p>{{ experience.description }}</p>
+                                    {% if experience.link %}
+                                    <p><a href="{{ experience.link }}" target="_blank">Read More</a></p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </section>
+</body>
+</html>
