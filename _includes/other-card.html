@@ -9,9 +9,9 @@
                 <div class="card-content">
                     <h1 class="title has-text-white is-size-4">{{ other.name | escape }}</h1>
                     <!-- Date Range Section -->
-                    {% if other.start-date and other.end-date %}
+                    {% if other.start-date %}
                     <div class="date-range" style="margin-top: 5px;">
-                        <p class="is-size-7 has-text-grey-light">{{ other.start-date | escape }} - {{ other.end-date | escape }}</p>
+                        <p class="is-size-7 has-text-grey-light">{{ other.start-date | escape }} {% if other.end-date %} - {{ other.end-date | escape }} {% endif %} </p>
                     </div>
                     {% endif %}
                     <div style="margin-top: 10px;">

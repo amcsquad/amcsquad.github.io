@@ -9,9 +9,9 @@
                 <div class="card-content">
                     <h1 class="title has-text-white is-size-4">{{ project.name | escape }}</h1>
                     <!-- Date Range Section -->
-                    {% if project.start-date and project.end-date %}
+                    {% if project.start-date %}
                     <div class="date-range" style="margin-top: 5px;">
-                        <p class="is-size-7 has-text-grey-light">{{ project.start-date | escape }} - {{ project.end-date | escape }}</p>
+                        <p class="is-size-7 has-text-grey-light">{{ project.start-date | escape }} {% if project.end-date %} - {{ project.end-date | escape }} {% endif %} </p>
                     </div>
                     {% endif %}
                     <div style="margin-top: 10px;">

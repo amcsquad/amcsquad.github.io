@@ -80,6 +80,21 @@ layout: compress
         .justify-content-center {
             justify-content: center;
         }
+
+        .dates {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+            .dates p {
+                margin: 0;
+                color: #f8f8f8;
+                font-size: 1rem;
+                font-weight: 500;
+            }
     </style>
 </head>
 
@@ -88,20 +103,30 @@ layout: compress
 
     <section class="hero is-halfheight has-text-centered" id="hero">
         <div class="hero-body">
+            <!-- Showreel Video Section -->
             {% if page.showreel %}
             <video id="hero-video" autoplay muted playsinline loop>
                 <source src="{{ page.showreel | escape }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             {% endif %}
+
+            <!-- Inside Hero Container -->
             <div class="container">
+                {% if page.icon %}
                 <img class="game-icon" src="{{ page.icon | escape }}" alt="Game Icon" />
+                {% endif %}
                 <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
                     {{ page.title | escape }}
                 </h1>
                 <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
                     {{ page.heading | escape }}
                 </h3>
+                {% if page.dates %}
+                <div class="dates">
+                    <p>{{ page.dates | escape }}</p>
+                </div>
+                {% endif %}
             </div>
         </div>
     </section>
@@ -142,6 +167,14 @@ layout: compress
                 </div>
                 <hr>
                 {% endif %}
+
+                <!--- Video Footage of the game -->
+                {% if page.video != null %}
+                <div class="video-container" style="padding-top: 0px !important">
+                    <iframe src="{{ page.video | escape }}?controls=0&modestbranding=1" width="100" height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <hr>
+                {% endif %}
             </div>
 
             <hr class="styled-hr">
@@ -156,7 +189,7 @@ layout: compress
 
         <hr class="styled-hr">
 
-        {{ content | escape }}
+        {{ content }}
 
     </div>
     {% include footer.html %}

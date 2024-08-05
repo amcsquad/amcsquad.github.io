@@ -33,11 +33,11 @@
     </table>
 </div>
 
-{% if page.hasRepository %}
-<hr>
-<div class="fixed-bottom-right">
-    <a href="http://github.com/{{ page.repo | escape }}" target="_blank">
-        <img src="{{ page.ghReadme | escape }}" alt="GitHub Repository">
+<!-- REPO OVERLAY -->
+{% if page.statslink %}
+<div style="position: fixed; right: 0; bottom: 0; z-index: 1000000; padding: 10px !important;">
+    <a href="http://github.com/{{ page.repo }}" target="_blank">
+        <img src="{{ page.statslink }}" style="opacity: 0.8;">
     </a>
 </div>
 {% endif %}
