@@ -3,5 +3,6 @@
     <title>{{ site.title | escape }}</title>
     <link rel="stylesheet" href="{{ site.baseurl | default: '' | escape }}/assets/css/style.css">
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="{% if site.favicon-url %}{{ site.favicon-url | escape }}{% else %}{{ 'assets/images/logo.png' | absolute_url | escape }}{% endif %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="{% if site.favicon-url %}{{ site.favicon-url }}{% else %}{{ 'assets/images/logo.png' }}{% endif %}" type="image/x-icon">
 </head>
