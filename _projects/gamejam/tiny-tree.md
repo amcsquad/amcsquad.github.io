@@ -19,4 +19,6 @@ duration: "48 Hours"
 tools: ['Unity']
 roles: ['Programming', 'Level Design']
 credits: ['Amy Elliott', 'Joe Shanahan', 'Luke Stampfli', 'Jules Langran', 'Olivia Onyia']
+repo: "JoeShanahan/GGJ2023"
+statslink: "https://github-readme-stats.vercel.app/api/pin/?username=JoeShanahan&repo=GGJ2023&theme=swift"
 ---

@@ -12,6 +12,23 @@
             <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
                 {{ page.description | escape }}
             </h3>
+            {% if page.title == "Projects" %}
+                <!-- Icon Key -->
+                <div class="icon-key">
+                    <div class="icon">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="label is-size-7 has-text-grey-light">Playable On Browser</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-git-alt"></i>
+                        <span class="label is-size-7 has-text-grey-light">Public Repository</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-download"></i>
+                        <span class="label is-size-7 has-text-grey-light">Downloadable</span>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 </section>

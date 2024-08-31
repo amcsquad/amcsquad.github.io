@@ -7,14 +7,16 @@
                 <figure class="image is-4by3" style="background-image: url({{ other.image | escape }});">
                 </figure>
                 <div class="card-content">
-                    <h1 class="title has-text-white is-size-4">{{ other.name | escape }}</h1>
+                    <div class="title-container">
+                        <h1 class="title has-text-white is-size-4 fixed-title">{{ other.name | escape }}</h1>
+                    </div>
                     <!-- Date Range Section -->
                     {% if other.start-date %}
                     <div class="date-range" style="margin-top: 5px;">
                         <p class="is-size-7 has-text-grey-light">{{ other.start-date | escape }} {% if other.end-date %} - {{ other.end-date | escape }} {% endif %} </p>
                     </div>
                     {% endif %}
-                    <div style="margin-top: 10px;">
+                    <div class="tags-container" style="margin-top: 10px;">
                         {%- assign tags = other.tags | split: ',' -%}
                         {%- unless tags.size == 0 -%}
                         <p class="is-uppercase" style="font-size: 0.75rem;">
@@ -26,6 +28,23 @@
                             {% endfor %}
                         </p>
                         {%- endunless -%}
+                    </div>
+                    <div class="icon-container" style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 5px;">
+                        {% if other.downloadable %}
+                        <span class="icon" style="font-size: 1rem; color: white;">
+                            <i class="fas fa-download"></i>
+                        </span>
+                        {% endif %}
+                        {% if other.git %}
+                        <span class="icon" style="font-size: 1rem; color: white;">
+                            <i class="fab fa-git-alt"></i>
+                        </span>
+                        {% endif %}
+                        {% if other.playable %}
+                        <span class="icon" style="font-size: 1rem; color: white;">
+                            <i class="fas fa-gamepad"></i>
+                        </span>
+                        {% endif %}
                     </div>
                 </div>
             </div>

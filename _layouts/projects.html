@@ -76,11 +76,54 @@ layout: compress
             .column {
                 width: 100% !important;
             }
+
+            .icon-key {
+                display: grid !important;
+                flex-direction: column;
+                gap: 10px !important;
+                text-align: center;
+            }
+
+                .icon-key .icon {
+                    flex-direction: row;
+                    gap: 10px;
+                }
+
+                .icon-key .label {
+                    white-space: nowrap;
+                }
         }
 
         .spacing {
             height: 50px;
         }
+
+        .icon-key {
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+            margin: 10px 0;
+            color: white;
+        }
+
+            .icon-key .icon {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1rem;
+            }
+
+                .icon-key .icon i {
+                    color: white;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    -webkit-text-stroke: 1px black;
+                }
+
+            .icon-key .label {
+                font-size: 1rem;
+                white-space: nowrap;
+                color: white;
+            }
     </style>
 </head>
 
@@ -90,7 +133,7 @@ layout: compress
 
     <!--Professional Projects Section-->
     <section class="hero is-halfsize" id="professional-projects">
-        <div class="hero-body" id="project">
+        <div class="hero-body" id="project" style="padding-top: 0px !important">
             <div class="container has-text-centered">
                 <div class="section">
                     <p class="subtitle is-uppercase has-text-weight-medium has-text-grey section-title">Professional Projects</p>

@@ -668,3 +668,33 @@ a.navbar-item.is-active {
     border-radius: 5px; // Rounded corners
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
+
+.title-container {
+    height: 3rem; /* Adjust this value to your desired fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-title {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit the title to 2 lines */
+    line-clamp: 2;
+    max-height: 3rem; /* Adjust this value based on your desired line height */
+    font-size: 1rem; /* Adjust the font size to ensure it fits within 2 lines */
+    line-height: 1.5rem; /* Adjust this value based on your desired line height */
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.tags-container {
+    height: 3.5rem; /* Adjust this value to accommodate the maximum number of tag lines you expect */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden; /* Optional: Hide overflowing tags if any */
+}
