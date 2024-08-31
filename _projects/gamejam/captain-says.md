@@ -10,7 +10,7 @@ summary: "Captain Says is an educational game designed around the theme 'The Gam
 
 # Media
 icon: "https://am3pap005files.storage.live.com/y4mQWbhn8cEXSxlviP8LCGFh13SRj7ljTQUcrxUQ2vcySkbdkTPIy-cP0WgIXKmqWP598RMBACklVrWG5hrePkhLmgTlzgIMzb6Iv3uU1WMRwT0KEyrsdbaY8OpvY1fbFNO-Yl1adaOv8EgUTXSyduYx91SEYFN3sClXZm_IbFgWj2DdOkPwKN3HO6ly6HACI54?width=1920&height=1634&cropmode=none"
-showreel: ""
+showreel: "https://onedrive.live.com/download?resid=9594E849DC7FC39E!61457&authkey=!ALeU14iIZitESC4"
 
 # Game Embed
 isgameembed: false
