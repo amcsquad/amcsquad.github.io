@@ -25,7 +25,7 @@ tools:
   - Unity
 roles:
   - Programming
-  - Level-Design
+  - Level Design
   - Art
 credits:
   - Amy Elliott

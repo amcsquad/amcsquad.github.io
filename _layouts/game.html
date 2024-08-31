@@ -15,7 +15,7 @@ layout: compress
             background-color: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-bottom: 5px;
         }
 
@@ -92,7 +92,7 @@ layout: compress
             margin-right: 10px;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
+            border-radius: 10px;
             display: inline-block;
         }
 
@@ -106,7 +106,7 @@ layout: compress
         /* Style for the game-type tags */
         .game-type {
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 10px;
             display: inline-block;
             color: white;
             font-weight: bold;
@@ -127,6 +127,194 @@ layout: compress
             .game-type.professional {
                 background-color: rgba(50, 205, 50, 0.5);
             }
+
+            .compact-card {
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                background-color: #fff;
+            }
+
+            .about-section p {
+                margin-bottom: 15px;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .credits-section {
+                display: flex;
+                align-items: center; /* Align the icon and badges vertically */
+                flex-wrap: wrap; /* Wrap badges to new lines if necessary */
+
+                justify-content: center; /* Center the content */
+                margin-top: 15px;
+            }
+
+            .credits-icon {
+                margin-right: 10px; /* Space between the icon and the badges */
+                font-size: 1.25rem; /* Match icon size to badge content */
+                color: #007bff; /* Use the same color as the badges */
+                display: flex;
+                align-items: center;
+            }
+
+            .credits-section .badge {
+                background-color: #007bff;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 10px;
+                font-size: 0.875rem;
+                display: inline-block;
+                margin: 5px;
+                display: flex;
+                align-items: center;
+                height: 100%; /* Ensure consistent height */
+            }
+
+            .details-section {
+                margin-top: 5px;
+            }
+
+            .details-grid {
+                display: flex;
+                justify-content: center;
+                gap: 30px; /* Space between each detail item */
+            }
+
+            .detail-item {
+                display: flex;
+                align-items: center;
+                gap: 10px; /* Space between icon and badge */
+            }
+
+            .detail-icon i {
+                font-size: 1.25rem;
+                color: #17a2b8;
+            }
+
+            .detail-item .badge {
+                background-color: #17a2b8;
+                color: #fff;
+                padding: 5px 12px;
+                border-radius: 10px;
+                font-size: 0.875rem;
+                display: inline-block;
+            }
+
+            @media (max-width: 768px) {
+            /* General adjustments */
+            .card {
+                padding: 15px;
+                margin: 0 10px;
+            }
+
+            .about-section p {
+                font-size: 0.9rem;
+            }
+
+            .credits-section {
+                display: flex;
+                align-items: center; /* Align the icon and badges vertically */
+                flex-wrap: wrap; /* Wrap badges to new lines if necessary */
+                justify-content: center; /* Center the content */
+                margin-top: 15px;
+            }
+
+            .credits-icon {
+                margin-right: 10px; /* Space between the icon and the badges */
+                font-size: 1.25rem; /* Match icon size to badge content */
+                color: #007bff; /* Use the same color as the badges */
+                display: flex;
+                align-items: center;
+            }
+
+            .credits-section .badge {
+                background-color: #007bff;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 10px;
+                font-size: 0.875rem;
+                display: inline-block;
+                margin: 5px;
+                display: flex;
+                align-items: center;
+                height: 100%; /* Ensure consistent height */
+            }
+
+            .details-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px; /* Space between each detail item */
+            }
+
+            .detail-item {
+                display: flex;
+                align-items: center;
+                gap: 8px; /* Space between icon and badge */
+                flex: 1 1 auto; /* Allow items to grow and shrink */
+                min-width: 140px; /* Ensures each item has a minimum width */
+                justify-content: center;
+            }
+
+            .detail-item .badge {
+                background-color: #17a2b8;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 10px;
+                font-size: 0.875rem;
+                display: inline-block;
+                white-space: nowrap; /* Prevents text wrapping */
+            }
+
+            .detail-icon i {
+                font-size: 1.25rem;
+                color: #17a2b8;
+            }
+
+            .centered-div {
+                padding: 10px;
+            }
+
+            .mobile-embed iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Ensure full width for game icons and other images */
+            .game-icon {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+
+            .info-tags {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .info-tags p {
+                font-size: 0.875rem;
+            }
+
+            .game-type {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+                font-size: 0.875rem;
+            }
+
+            /* Adjust the padding and margin in containers */
+            .container {
+                padding: 0 15px;
+            }
+        }
     </style>
 </head>
 
@@ -180,44 +368,75 @@ layout: compress
     <div class="container centered-content" style="margin-top: 40px; margin-bottom: 40px;">
         <div class="row" style="margin-bottom: 40px;">
             <div class="col-md-12">
-                <div class="card" style="padding: 20px;">
-                    <div style="padding-bottom: 20px;">
-                        <h2 class="title is-size-5" style="margin: 0rem !important; text-align:center;">About the game</h2>
-                        <hr class="styled-hr">
-                        <p class="post-meta" style="text-align:center;">{{ page.summary }}</p>
-                    </div>
-                    <div class="credits-section" style="padding-bottom: 20px;">
-                        <div class="d-flex flex-wrap justify-content-center">
+                <div class="card compact-card" style="padding: 20px;">
+                    <div class="about-section" style="padding-bottom: 20px; text-align:center;">
+                        <h2 class="title is-size-5" style="margin: 0 !important;">About the game</h2>
+                        <p class="post-meta">{{ page.summary }}</p>
+                        <div class="credits-section">
+                            <span class="credits-icon">
+                                <i class="fas fa-users"></i>
+                            </span>
                             {% for credit in page.credits %}
-                            <small class="btn btn-col status-button" style="margin: 5px;">{{ credit | escape }}</small>
+                            <span class="badge">{{ credit | escape }}</span>
                             {% endfor %}
                         </div>
                     </div>
+            
+                    {% if page.status or page.tools or page.roles %}
+                    <div class="details-section" style="text-align: center;">
+                        <div class="details-grid">
+                            {% if page.status %}
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="badge">{{ page.status | escape }}</span>
+                            </div>
+                            {% endif %}
+                            {% if page.tools %}
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <i class="fas fa-wrench"></i>
+                                </span>
+                                {% for tool in page.tools %}
+                                <span class="badge">{{ tool | escape }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            
+                            {% if page.roles %}
+                            <div class="detail-item">
+                                <span class="detail-icon">
+                                    <i class="fas fa-user-tag"></i>
+                                </span>
+                                {% for role in page.roles %}
+                                <span class="badge">{{ role | escape }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
 
             <div class="centered-div">
-                <!--- Video Footage of the game -->
-                {% if page.video != null %}
-                <div class="video-container" style="padding-top: 0px !important">
-                    <iframe src="{{ page.video | escape }}?controls=0&modestbranding=1" width="100" height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                {% if page.video %}
+                <div class="video-container">
+                    <iframe src="{{ page.video | escape }}?controls=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
-                <hr>
                 {% endif %}
-
-                {% if page.isgameembed %}
-                <!-- MOBILE WARNING -->
+                
+                {% if page.isgameembed and page.gameembed %}
                 <div class="mobile-warning">Cannot display game on mobile devices.</div>
-                <!-- MOBILE EMBED -->
                 <div class="mobile-embed">
                     <iframe frameborder="0" src="{{ page.widgetembed | escape }}"></iframe>
                 </div>
-                <!-- GAME EMBED -->
                 <div class="desktop-embed">
                     <iframe frameborder="0" src="{{ page.gameembed | escape }}" allowfullscreen=""></iframe>
                 </div>
                 <hr>
-                {% else if page.widgetembed %}
+                {% elsif page.widgetembed and page.widgetembed != "" and page.widgetembed != blank %}
                 <div class="widget-embed">
                     <iframe frameborder="0" src="{{ page.widgetembed | escape }}"></iframe>
                 </div>

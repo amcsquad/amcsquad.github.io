@@ -10,7 +10,7 @@ tags:
 
 ---
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2y3amkjkUI2uR6tAfF8KkB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<iframe style="border-radius:20px" src="https://open.spotify.com/embed/episode/2y3amkjkUI2uR6tAfF8KkB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 <div class="video-container" style="padding-top: 0px !important">
 	<iframe width="100%" height="800" src="https://www.youtube.com/embed/t6_xWfqHckA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
