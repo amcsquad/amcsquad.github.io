@@ -202,7 +202,6 @@ layout: compress
             }
 
             @media (max-width: 768px) {
-            /* General adjustments */
             .card {
                 padding: 15px;
                 margin: 0 10px;
@@ -210,6 +209,35 @@ layout: compress
 
             .about-section p {
                 font-size: 0.9rem;
+            }
+
+            .details-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px; /* Space between each detail item */
+            }
+
+            .detail-item {
+                display: flex;
+                align-items: center;
+                gap: 8px; /* Space between icon and badge */
+                flex: 1 1 auto; /* Allow items to grow and shrink */
+                justify-content: center;
+                min-width: 45%; /* Ensures each item has a minimum width */
+            }
+
+            .detail-item .badge {
+                background-color: #17a2b8;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 10px;
+                font-size: 0.875rem;
+                display: inline-block;
+                white-space: nowrap; /* Prevents text wrapping */
+                overflow: hidden; /* Prevents overflow */
+                text-overflow: ellipsis; /* Adds ellipsis if the text is too long */
+                max-width: 100%; /* Ensure the badges fit within the screen */
             }
 
             .credits-section {
@@ -238,83 +266,30 @@ layout: compress
                 margin: 5px;
                 display: flex;
                 align-items: center;
-                height: 100%; /* Ensure consistent height */
+                height: auto; /* Ensure consistent height */
+                max-width: 100%; /* Allow full width usage */
             }
 
-            .details-grid {
+            .roles-grid {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 10px; /* Space between each detail item */
+                gap: 10px; /* Space between each role item */
             }
 
-            .detail-item {
-                display: flex;
-                align-items: center;
-                gap: 8px; /* Space between icon and badge */
-                flex: 1 1 auto; /* Allow items to grow and shrink */
-                min-width: 140px; /* Ensures each item has a minimum width */
-                justify-content: center;
-            }
-
-            .detail-item .badge {
+            .roles-grid .badge {
                 background-color: #17a2b8;
                 color: #fff;
                 padding: 5px 10px;
                 border-radius: 10px;
                 font-size: 0.875rem;
                 display: inline-block;
-                white-space: nowrap; /* Prevents text wrapping */
-            }
-
-            .detail-icon i {
-                font-size: 1.25rem;
-                color: #17a2b8;
-            }
-
-            .centered-div {
-                padding: 10px;
-            }
-
-            .mobile-embed iframe {
-                width: 100%;
-                height: auto;
-            }
-
-            iframe {
-                width: 100%;
-                height: auto;
-            }
-
-            /* Ensure full width for game icons and other images */
-            .game-icon {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 max-width: 100%;
-                height: auto;
-                margin-bottom: 15px;
             }
-
-            .info-tags {
-                width: 100%;
-                text-align: center;
-                margin: 10px 0;
             }
-
-            .info-tags p {
-                font-size: 0.875rem;
-            }
-
-            .game-type {
-                width: 100%;
-                text-align: center;
-                margin: 10px 0;
-                font-size: 0.875rem;
-            }
-
-            /* Adjust the padding and margin in containers */
-            .container {
-                padding: 0 15px;
-            }
-        }
     </style>
 </head>
 
@@ -426,9 +401,9 @@ layout: compress
                     <iframe src="{{ page.video | escape }}?controls=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 {% endif %}
-                
+
                 {% if page.isgameembed and page.gameembed %}
-                <div class="mobile-warning">Cannot display game on mobile devices.</div>
+                <div class="mobile-warning">Cannot display game on mobile devices. Please visit on a desktop to play.</div>
                 <div class="mobile-embed">
                     <iframe frameborder="0" src="{{ page.widgetembed | escape }}"></iframe>
                 </div>
