@@ -20,7 +20,7 @@
 a.navbar-item:hover,
 .navbar-link:hover {
     background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
+    color:  #FFBC0A !important;
 }
 
 a.navbar-item.is-active {
@@ -82,6 +82,124 @@ a.navbar-item.is-active {
         min-width: 25vmax;
         margin: 0.5rem;
     }
+    p strong {
+        color: #0A21C0; /* Change this to your desired color */
+    }
+
+    p ol li strong {
+        color: #0A21C0; /* Change this to your desired color */
+    }
+}
+
+#skills{
+    h1 {
+        color: white; /* Changes font color to white */
+        font-size: 2.5em; /* Increase font size for prominence */
+        font-weight: bold; /* Make font weight bold */
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Add padding if needed */
+    }
+    /* Ensure the hero section takes full viewport height */
+    .hero {
+        display: flex;
+        align-items: stretch; /* Stretch columns to full height */
+        justify-content: center; /* Center content horizontally */
+        min-height: 100vh; /* Full viewport height */
+        padding: 20px;
+    }
+
+    /* Styling for the container */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Create two columns with different widths */
+        gap: 20px; /* Optional: Adds spacing between columns */
+        width: 100%;
+        height: 100%; /* Full height of the hero section */
+    }
+
+    /* Styling for the left column */
+    .left-column {
+        color: white; /* Text color */
+        padding: 20px; /* Padding inside column */
+        border-radius: 8px; /* Optional: Rounded corners */
+        display: flex; /* Flexbox to handle content alignment */
+        align-items: center; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
+        flex-direction: column; /* Ensure heading is centered vertically and horizontally */
+    }
+
+    /* Styling for the right column */
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Spacing between rows */
+        padding: 20px; /* Padding inside column */
+        border-radius: 8px; /* Optional: Rounded corners */
+    }
+
+    /* Styling for individual rows */
+    .row {
+        display: flex; /* Flexbox layout for row items */
+        align-items: flex-start; /* Align items to the top of the row */
+        gap: 20px; /* Spacing between image and text */
+        color: white; /* Text color for contrast */
+        border-radius: 4px; /* Optional: Rounded corners */ 
+        text-align: left; /* Ensure text is left-aligned */
+    }
+
+    .image-container {
+        flex-shrink: 0; /* Prevent the image from shrinking */
+        width: 100px; /* Adjust the width of the image container */
+        height: 100px; /* Adjust the height of the image container */
+        overflow: hidden; /* Hide overflow of image */
+        border-radius: 8px; /* Optional: Rounded corners for the image */
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image fills the container */
+        height: auto; /* Maintain aspect ratio of the image */
+    }
+
+    .text-container {
+        flex: 1; /* Allow the text container to take remaining space */
+    }
+
+    /* Styling for headings and paragraphs */
+    .row h2 {
+        margin-top: 0; /* Remove top margin for headings */
+        font-size: 1.5em; /* Adjust font size */
+        color: #73EEDC
+    }
+
+    .row p {
+        margin: 5px 0; /* Margin for paragraphs */
+    }
+
+    .row p strong{
+        color: #FFBC0A; /* Change this to your desired color */
+    }
+
+}
+
+#experience{
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+        text-align: left;
+    }
+    th {
+        background-color: #ffffff;
+    }
+    .section-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
 }
 
 #contact {
@@ -129,9 +247,9 @@ a.navbar-item.is-active {
 
         &:hover {
             transform: scale(0.875);
-            -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-            -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 0px 0px 30px 0px #0A21C0;
+            -moz-box-shadow: 0px 0px 30px 0px #0A21C0;
+            box-shadow: 0px 0px 30px 0px #0A21C0;
         }
 
         @media (max-width: 768px) {
@@ -140,10 +258,9 @@ a.navbar-item.is-active {
 
             &:hover {
                 transform: scale(1.025);
-                margin-bottom: 5vmax !important;
-                -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-                -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+                -webkit-box-shadow: 0px 0px 30px 0px #0A21C0;
+                -moz-box-shadow: 0px 0px 30px 0px #0A21C0;
+                box-shadow: 0px 0px 30px 0px #0A21C0;
             }
 
             .image {
@@ -254,6 +371,7 @@ a.navbar-item.is-active {
             font-weight: bolder;
             color: white;
         }
+        background-color: #DF2935;
     }
 }
 
@@ -291,16 +409,38 @@ a.navbar-item.is-active {
 
 #post {
     @media (min-width: 768px) {
-        margin: auto 2.5vmax;
+        margin: auto 10vmax;
     }
     a {
         text-decoration: underline;
     }
+
+    .metadata{
+        display: flex;          // Enables flexbox layout
+        justify-content: space-between; // Distributes space between columns
+        align-items: center;    // Aligns items vertically center (optional, depending on content)
+        width: 100%;            // Ensures the container spans the full width of its parent
+    }
+
+    .left-metdata {
+        text-align: left;       // Ensures text inside is left-aligned
+    }
+    
+    .right-metadata {
+        text-align: right;      // Ensures text inside is right-aligned
+    }
+
     #title {
         text-decoration: none;
     }
     .title {
         margin: auto;
+        padding-top: 40px;
+        color: #1E91D6;
+        font-size: 56px;
+    }
+    h1{
+        color: #FFBC0A;
     }
     #post-image {
         border-radius: 0.25rem;
@@ -315,6 +455,7 @@ a.navbar-item.is-active {
 
     .tag {
         margin: 0.15rem auto;
+        background-color: #DF2935;
     }
     .content {
         ol, ul, blockquote {
@@ -325,7 +466,9 @@ a.navbar-item.is-active {
         }
         img, iframe {
             max-width: calc(100% - 25vw);
-            margin: 0.25rem auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             @media (max-width: 768px) {
                 max-width: calc(100% - 5vw);
             }
@@ -333,16 +476,38 @@ a.navbar-item.is-active {
         ul, ol {
             display: inline-block;
         }
+
+        table {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            table-layout: auto;
+
+        }
+
+        th{
+            background-color: #000000;
+            color: white;
+        }
+
+        td {
+            max-width: 500px; /* Limits the maximum width of cells, adjust as needed */
+        }
+
+        th, td {
+            word-wrap: break-word;
+            white-space: normal;
+            overflow-wrap: break-word;
+            text-align: left; /* Aligns text to the left for better readability */
+        }
+
+
     }
 
     .container {
         margin: 2.5rem auto;
         word-break: break-word;
         max-width: -webkit-fill-available;
-    }
-
-    #disqus_thread {
-        margin-top: 5vmax;
     }
 }
 

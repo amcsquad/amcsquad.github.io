@@ -1,0 +1,12 @@
+<section class="hero is-fullheight has-text-centered has-background-white-ter" id="blog">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
+                <h1 class="this-is-the-h1-text"> <span style="color: #DF2935; font-weight: bold;"> Projects </span> </h1>
+                {% for post in site.posts | limit: 3 %}
+                    {% include blog-card-highlights.html %}
+                {% endfor %}
+                </div>
+               </div>
+        </div>
+</section>
