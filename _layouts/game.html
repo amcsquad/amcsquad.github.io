@@ -69,6 +69,12 @@ layout: compress
             height: 150px;
         }
 
+        .widget-embed iframe {
+            max-width: 100%;
+            width: 552px;
+            height: 150px;
+        }
+
         .d-flex {
             display: flex;
         }
@@ -81,19 +87,45 @@ layout: compress
             justify-content: center;
         }
 
-        .dates {
+        .info-tags {
             margin-top: 20px;
+            margin-right: 10px;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
             display: inline-block;
         }
 
-            .dates p {
+            .info-tags p {
                 margin: 0;
                 color: #f8f8f8;
                 font-size: 1rem;
                 font-weight: 500;
+            }
+
+        /* Style for the game-type tags */
+        .game-type {
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-right: 10px;
+            text-transform: uppercase;
+        }
+
+            /* Color codes for different game types */
+            .game-type.gamejam {
+                background-color: rgba(255, 99, 71, 0.5);
+            }
+
+            .game-type.personal {
+                background-color: rgba(70, 130, 180, 0.5);
+            }
+
+            .game-type.professional {
+                background-color: rgba(50, 205, 50, 0.5);
             }
     </style>
 </head>
@@ -109,11 +141,13 @@ layout: compress
                 <source src="{{ page.showreel | escape }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            {% endif %}
+            {% else if page.picture %}
+            <img id="hero-photo" src="{{ page.picture | escape }}" alt="Hero Image">
+            {% endif %}      
 
             <!-- Inside Hero Container -->
             <div class="container">
-                {% if page.icon %}
+                {% if page.icon != empty %}
                 <img class="game-icon" src="{{ page.icon | escape }}" alt="Game Icon" />
                 {% endif %}
                 <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
@@ -122,9 +156,19 @@ layout: compress
                 <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
                     {{ page.heading | escape }}
                 </h3>
+                {% if page.type %}
+                <div class="game-type {{ page.type | downcase }}">
+                    <p>{{ page.type | escape }} PROJECT</p>
+                </div>
+                {% endif %}
                 {% if page.dates %}
-                <div class="dates">
+                <div class="info-tags">
                     <p>{{ page.dates | escape }}</p>
+                </div>
+                {% endif %}
+                {% if page.duration %}
+                <div class="info-tags">
+                    <p>{{ page.duration | escape }}</p>
                 </div>
                 {% endif %}
             </div>
@@ -140,9 +184,8 @@ layout: compress
                     <div style="padding-bottom: 20px;">
                         <h2 class="title is-size-5" style="margin: 0rem !important; text-align:center;">About the game</h2>
                         <hr class="styled-hr">
-                        <p class="post-meta">{{ page.summary }}</p>
+                        <p class="post-meta" style="text-align:center;">{{ page.summary }}</p>
                     </div>
-
                     <div class="credits-section" style="padding-bottom: 20px;">
                         <div class="d-flex flex-wrap justify-content-center">
                             {% for credit in page.credits %}
@@ -154,6 +197,14 @@ layout: compress
             </div>
 
             <div class="centered-div">
+                <!--- Video Footage of the game -->
+                {% if page.video != null %}
+                <div class="video-container" style="padding-top: 0px !important">
+                    <iframe src="{{ page.video | escape }}?controls=0&modestbranding=1" width="100" height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <hr>
+                {% endif %}
+
                 {% if page.isgameembed %}
                 <!-- MOBILE WARNING -->
                 <div class="mobile-warning">Cannot display game on mobile devices.</div>
@@ -166,14 +217,10 @@ layout: compress
                     <iframe frameborder="0" src="{{ page.gameembed | escape }}" allowfullscreen=""></iframe>
                 </div>
                 <hr>
-                {% endif %}
-
-                <!--- Video Footage of the game -->
-                {% if page.video != null %}
-                <div class="video-container" style="padding-top: 0px !important">
-                    <iframe src="{{ page.video | escape }}?controls=0&modestbranding=1" width="100" height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                {% else if page.widgetembed %}
+                <div class="widget-embed">
+                    <iframe frameborder="0" src="{{ page.widgetembed | escape }}"></iframe>
                 </div>
-                <hr>
                 {% endif %}
             </div>
 

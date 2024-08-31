@@ -59,6 +59,18 @@ a.navbar-item.is-active {
         filter: blur(0.15rem);
     }
 
+    img#hero-photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.25;
+        filter: blur(0.15rem);
+    }
+
     .hero-body {
         position: relative;
         z-index: 1;

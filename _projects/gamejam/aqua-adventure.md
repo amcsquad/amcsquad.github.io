@@ -1,25 +1,42 @@
 ---
 title: Aqua Adventure
-categories: gamejam
 layout: game
-post-image: " "
-description:
-tags:
-legacylink: https://legacy.amy-portfolio.com/games/aqua-adventure/#/
+categories: gamejam
+type: gamejam
+
+# Project Overview
 heading: "StarFox is now underwater!"
 summary: "Aqua Adventure is a shoot em' up game designed around the theme 'Starfox'. <small>(TDEMO Starfox)</small>"
-icon: https://am3pap005files.storage.live.com/y4mkIM84IeTm3tJ1UnVon-NJX7R_-7OrHMm3rTUdJbSFCzFmkGK9vMda0vtxwQjtcqscPtYDaLT0f-fUN_SIxt0CVSqyqeCskpg58g-ZsgXYBo93kz_6mkOZEl4wFAROjwch-i6XV7J5-yDyGPrrDiXLbGfcah6ouyWjK4CSuX9qHB8iLMG0TYszHWKIWnYlsVU?width=1920&height=1634&cropmode=none
-showreel: 
-itch: https://horsehead.itch.io/airport-lost-found-division
+
+# Media
+icon: "https://am3pap005files.storage.live.com/y4mkIM84IeTm3tJ1UnVon-NJX7R_-7OrHMm3rTUdJbSFCzFmkGK9vMda0vtxwQjtcqscPtYDaLT0f-fUN_SIxt0CVSqyqeCskpg58g-ZsgXYBo93kz_6mkOZEl4wFAROjwch-i6XV7J5-yDyGPrrDiXLbGfcah6ouyWjK4CSuX9qHB8iLMG0TYszHWKIWnYlsVU?width=1920&height=1634&cropmode=none"
+showreel: "https://onedrive.live.com/download?resid=9594E849DC7FC39E!61440&authkey=!AHi-Zoj2aEHCwFw"
+
+# Game Embed
 isgameembed: false
-gameembed: 
-widgetembed: 
+video: https://drive.google.com/file/d/1Lsjp-sLquA0sjiQp2OGtJFtKbMXT4TwD/preview
+
+# Project Details
 status: "Done"
-projecttype: "Game Jam"
-duration: "2 Weeks (15 Hours Work Time)"
-tools: ['Unity']
-roles: ['Programming', 'UI', 'Level Design']
-credits: ['Amy Elliott', 'Hayley', 'Tessa', 'Denisa', 'Abby', 'Hannah', 'Scarlett']
+duration: "15 Hours"
+dates: "December 2020"
+tools:
+  - Unity
+roles:
+  - Programming
+  - UI
+  - Level Design
+credits:
+  - Amy Elliott
+  - Hayley
+  - Tessa
+  - Denisa
+  - Abby
+  - Hannah
+  - Scarlett
+repo: ""
+statslink: ""
+itch: "https://horsehead.itch.io/airport-lost-found-division"
 ---
 
 <h3 style="text-align:center; margin-top: 20px; margin-bottom: 20px">Taking On The Programming Myself</h3>

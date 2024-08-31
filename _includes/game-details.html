@@ -5,14 +5,6 @@
             <td><small class="btn btn-col status-button">{{ page.status | escape }}</small></td>
         </tr>
         <tr>
-            <th>Project Type:</th>
-            <td><small class="btn btn-col status-button">{{ page.projecttype | escape }}</small></td>
-        </tr>
-        <tr>
-            <th>Development Duration:</th>
-            <td><small class="btn btn-col status-button">{{ page.duration | escape }}</small></td>
-        </tr>
-        <tr>
             <th>Tools Used:</th>
             <td>
                 {% for tool in page.tools %}
