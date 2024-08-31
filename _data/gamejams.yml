@@ -1,3 +1,11 @@
+- name: Toni The Tiny Wizard
+  image: https://1drv.ms/i/s!Ap7Df9xJ6JSVg-APcK3ORBaLd6cZDQ?embed=1&width=315&height=250
+  link: /projects/gamejam/toni-the-tiny-wizard
+  start-date: Aug 2024
+  tags: Platformer, Cute
+  playable: true
+  git: true
+
 - name: Tiny Tree
   image: https://onedrive.live.com/embed?resid=9594E849DC7FC39E%2160885&authkey=%21ABbhJav-D7DrMFo&width=1920&height=1634
   link: /projects/gamejam/tiny-tree
