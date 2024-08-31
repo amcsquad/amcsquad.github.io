@@ -296,6 +296,15 @@ layout: compress
 <body>
     {% include navbar.html %}
 
+    <!-- REPO OVERLAY -->
+    {% if page.statslink %}
+    <div style="position: fixed; right: 0; bottom: 0; z-index: 1000000; padding: 10px !important;">
+        <a href="http://github.com/{{ page.repo }}" target="_blank">
+            <img src="{{ page.statslink }}" style="opacity: 0.8;">
+        </a>
+    </div>
+    {% endif %}
+
     <section class="hero is-halfheight has-text-centered" id="hero">
         <div class="hero-body">
             <!-- Showreel Video Section -->
