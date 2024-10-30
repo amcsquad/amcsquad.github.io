@@ -1,19 +1,13 @@
-<div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">
-        MORE
+<div class="navbar-item has-dropdown is-hoverable {% if page.url == 'events' | absolute_url  %}is-active{% endif %}">
+    <a class="navbar-link is-arrowless" href="{{sitepage.url}}/events">
+        Events
     </a>
-    <div class="navbar-dropdown has-background-black is-left">
-        {% for sitepage in site.html_pages %}
-        {% unless sitepage.url == '/' or sitepage.url == '/404'  or sitepage.url == '/blog' %}
-        <a href="{{sitepage.url | absolute_url}}"
-            class="navbar-item has-text-grey-light {% if page.url == sitepage.url | absolute_url  %}is-active{% endif %}">
-            {{sitepage.title}}
+    <div class="navbar-dropdown is-right">
+        {% for event in site.data.events %}
+        <a href="{{event.url | absolute_url}}"
+            class="navbar-item text-right {% if page.url == event.url | absolute_url  %}is-active{% endif %}">
+            {{event.name}}
         </a>
-        {% endunless %}
         {% endfor %}
-        <!-- <hr class="navbar-divider">
-    <a class="navbar-item">
-      Report an issue
-    </a> -->
     </div>
 </div>

@@ -3,40 +3,53 @@
 
 @import "main.scss";
 
+// Header navigation
+
 #navbar {
-    opacity: 0.95;
+    background-color: $white;
+    padding: 0.5em;
 }
 
-.is-active {
-    font-weight: 600;
-}
-
-.navbar-dropdown {
-    border: none;
-    right: 0;
-    left: auto;
-}
-
-a.navbar-item:hover,
-.navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-}
-
-a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-
+a.navbar-item {
+    color: $charcoal;
+    .is-active {
+        background-color: $white;
+        color: $soft-green !important;
+    }
+    &:focus {
+        background-color: $white;
+        color: $charcoal;  
+    }
     &:hover {
-        background-color: rgba($color: #fff, $alpha: 0.25) !important;
-        color: grey;
+        background-color: $white;
+        color: $soft-green;
     }
 }
 
-.navbar-link:not(.is-arrowless)::after {
-    border-color: grey;
+.navbar-menu {
+    background-color: $white;
 }
 
+.navbar-icon { // Instagram logo
+    color: $charcoal;
+    font-size: 1.5rem;
+}
+
+.navbar-brand { // Org title
+    .navbar-item {
+        padding: 0 1rem;
+    }
+    .title-text {
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    img {
+        max-height: 3rem;
+        padding-right: 0.5rem;
+    }
+}
+
+// Hero images
 
 #hero {
     background: rgb(0, 0, 0);
@@ -47,7 +60,7 @@ a.navbar-item.is-active {
 
     &::before {
         filter: blur(0.15rem);
-        background-image: url({{site.heroimage}});
+        background-image: url({{site.baseurl}}/{{site.heroimage}});
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
