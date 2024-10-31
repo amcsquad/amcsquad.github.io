@@ -1,14 +1,8 @@
-<section class="hero is-fullheight has-text-centered" id="contact">
-    <div class="hero-body">
-        <div class="container">
-            <div class="column is-full is-size-3">
-                {% unless site.instagram_username ==  %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
-                {% endunless %}
-                {% unless site.email ==  %}
-                <a href="mailto:{{site.email}}" target="_blank" class="has-text-black"><i class="fas fa-envelope"></i></a>
-                {% endunless %}
-            </div>
-        </div>
-    </div>
-</section>
+<div class="column is-full social-contact">
+    {% unless site.instagram_username ==  %}
+    <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank"><i class="fab fa-instagram"></i></a>
+    {% endunless %}
+    {% unless site.email ==  %}
+    <a href="mailto:{{site.email}}" target="_blank"><i class="fas fa-envelope"></i></a>
+    {% endunless %}
+</div>

@@ -212,6 +212,8 @@ a.navbar-item {
 
 
 #footer {
+    background-color: rgba($color: $sand, $alpha: 0.50);
+
     #backtotop {
         transition: all 0.25s ease;
         width: 10rem;
@@ -228,6 +230,8 @@ a.navbar-item {
         padding: 1.5rem;
         line-height: 1.25;
 
+        color: $charcoal;
+
         .column {
             display: grid;
             justify-content: center;
@@ -238,10 +242,9 @@ a.navbar-item {
             }
 
             a {
-                color: #7a7a7a;
-
+                color: $soft-green;
                 &:hover {
-                    color: white;
+                    color: $charcoal;
                 }
             }
 
@@ -255,10 +258,40 @@ a.navbar-item {
                     transform: scale(1.15);
                 }
             }
+
+            h3 {
+                font-weight: 700;
+            }
+
+            p {
+                display: flex;
+                line-height: 2rem;
+                align-items: center;
+            }
+
+            .date {
+                color: gray;
+                font-size: 0.75rem;
+                line-height: 2rem;
+                padding-left: 4px;
+            }
+
+            .social-contact {
+                display: block;
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                color: $soft-green;
+                &:hover {
+                    color: $charcoal;
+                }
+            }
         }
     }
 
     #credits {
+        background-color: $sand;
         padding: 0.75rem;
         font-size: 0.85rem;
 

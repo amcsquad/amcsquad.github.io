@@ -1,28 +1,30 @@
 <footer id="footer">
-    <div class="has-background-grey-darker">
+    <div class="footer-container">
         <div class="container columns">
             <!--Link Section-->
-            <div class="column is-size-3">
-                {% unless site.instagram_username ==  %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-white"><i class="fab fa-instagram"></i></a>
-                {% endunless %}
-                {% unless site.email ==  %}
-                <a href="mailto:{{site.email}}" target="_blank" class="has-text-white"><i class="fas fa-envelope"></i></a>
-                {% endunless %}
+            <div class="column">
+                <h3>Connect with us</h3>
+                {% include contact.html %}
+            </div>
+            
+            <!--Events Section-->
+            <div class="column">
+                <h3>Next event</h3>
+                {% for event in site.data.events offset: 0 limit:1 %}
+                    <p><a href="{{event.link | absolute_url}}">{{event.name}}</a> <span class="date">({{event.date}})</span></p>
+                {% endfor %}
             </div>
 
             <!--Blog-post Section-->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
+            <div class="column">
+                <h3>Most recent newsletter</h3>
+                {% for post in site.posts offset: 0 limit:1 %}
+                    <p><a href="{{post.url | absolute_url}}">{{post.title}}</a> <span class="date">({{post.date | date: "%d %-B, %Y" }})</span></p>
                 {% endfor %}
             </div>
         </div>
     </div>
-    <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    <div class="has-text-centered" id="credits">
+        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} Amsterdam Parent Project
     </div>
 </footer>
