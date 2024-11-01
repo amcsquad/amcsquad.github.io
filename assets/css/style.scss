@@ -456,8 +456,9 @@ a.navbar-item {
     }
     h3 {
         margin: 0.5rem 0;
-        font-weight: 400;
+        font-weight: 600;
         color: $goldenrod;
+        font-size: 1.2em;
     }
     a {
         color: $sand;
@@ -473,16 +474,16 @@ a.navbar-item {
         list-style-position: outside; 
         list-style-type: disc;
         padding-left: 1.5rem;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .event-tagline {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .button {
         background-color: $goldenrod;
         color: $white;
         border: 0px;
-        font-weight: 500;
+        font-weight: 600;
         &:hover {
             color: $soft-green;
         }

@@ -9,10 +9,6 @@ location-name: Buurtsalon Jeltje in Oud West
 location-address: Eerste Helmersstraat 106N, 1054 EG Amsterdam
 location-link: https://maps.app.goo.gl/B7Brb6a6C3ykLEUd9
 
-ticket-header:
-ticket-link: 
-ticket-description:
-
 tags:
 - community
 - sale
