@@ -86,9 +86,9 @@ You can sell a maximum of 5 items at a time over €2, and none priced over €1
 
 ### Who is organizing this? How are you paying for all of this?
 
-This is a labor of love from your Walks group admins, Geraldine and Alex 💗 Alex covered the cost of the space and other materials (coffee, tea, etc.) out of her own pocket.
+This is a labor of love from the Amsterdam Mama Walks group admins, Geraldine and Alex (from the Amsterdam Parent Project) 💗 The Amsterdam Parent Project is covering the cost of the space and other materials.
 
-Our goal is to break even on the event and reach the many parents in West that don’t have places in the neighborhood to gather together. 
+Our goal is to reach the many parents in West that don’t have places in the neighborhood to gather together and contribute to the circular economy of baby items. 
 
 ### Can I help on the day? In the future?
 

@@ -420,6 +420,7 @@ a.navbar-item {
     }
     .container {
         max-width: 1000px;
+        width: 100%;
     }
     h2 {
         padding: 0.3em 0;
@@ -427,8 +428,14 @@ a.navbar-item {
     }
     .event-content-container {
         display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         .column {
             margin-top: 0px;
+            @media (max-width: 768px) {
+                margin-bottom: 1rem;
+            }
         }
     }
     .button {
@@ -461,10 +468,8 @@ a.navbar-item {
         font-size: 1.2em;
     }
     a {
-        color: $sand;
-        border-bottom: 1px dashed $white;
         &:hover {
-            color: $goldenrod;
+            color: $sand;
         }
     }
     span {
@@ -488,4 +493,20 @@ a.navbar-item {
             color: $soft-green;
         }
     }
+
+    @media (max-width: 768px) {
+        margin-top: 2rem;
+        .event-tagline {
+            font-size: 1em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+#calendar {
+    width: -webkit-fill-available;
+    margin: 2rem;
 }

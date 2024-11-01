@@ -1,5 +1,4 @@
 ---
 layout: project
-title: Events
+title: Calendar
 ---
-

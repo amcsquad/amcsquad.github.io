@@ -15,11 +15,14 @@ layout: compress
     <!--Main Section-->
     <section class="hero is-fullheight" id="project">
         <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="section">
-                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Events</p>
-                </div>
-                {% include event-card.html %}
+            <div>
+                <h1 class="title is-1 is-uppercase has-text-weight-bold">
+                    {{page.title}}
+                </h1>
+            </div>
+            <div id="calendar">
+                <iframe src="https://embed.styledcalendar.com/#uWrRSDRSy6g2UZtPhCSi" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+                <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
             </div>
         </div>
     </section>
