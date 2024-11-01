@@ -1,4 +1,4 @@
 ---
-layout: project
+layout: calendar
 title: Calendar
 ---
