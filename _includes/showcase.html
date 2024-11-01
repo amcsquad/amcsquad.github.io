@@ -10,9 +10,14 @@
       </h3>
       <hr>
       <div class="link-tree">
-        <a href="{{site.url}}{{site.baseurl}}/events"
-          class="button is-rounded">Next event - €2 Sale</a>
-        </a>
+        {% for event in site.data.events offset: 0 limit:1 %}
+          <a href="{{event.link}}"
+            class="button is-rounded">
+            
+            Next event - {{event.name}}</a>
+          </a>  
+        {% endfor %}
+        
         <a href="{{site.instagram-link}}"
         class="button is-rounded">Follow us on Instagram <i class="fas fa-external-link-alt"></i></a>
         </a>

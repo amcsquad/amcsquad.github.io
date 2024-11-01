@@ -330,6 +330,12 @@ a.navbar-item {
                 }
             }
         }
+
+        @media (max-width: 768px) {
+            .column {
+                justify-content: start;
+            }
+        }
     }
 
     #credits {
@@ -341,6 +347,11 @@ a.navbar-item {
             text-decoration: underline;
             font-weight: bolder;
             color: white;
+        }
+
+        @media (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
