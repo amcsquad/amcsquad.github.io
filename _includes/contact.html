@@ -1,7 +1,5 @@
 <div class="column is-full social-contact">
-    {% unless site.instagram_username ==  %}
-    <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank"><i class="fab fa-instagram"></i></a>
-    {% endunless %}
+    <a href="{{site.instagram-link}}" target="_blank"><i class="fab fa-instagram"></i></a>
     {% unless site.email ==  %}
     <a href="mailto:{{site.email}}" target="_blank"><i class="fas fa-envelope"></i></a>
     {% endunless %}

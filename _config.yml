@@ -19,13 +19,12 @@ favicon-url:  assets/images/favicon.ico
 logo-url: assets/images/logo.png
 logo-text-url: assets/images/logo-text.png
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: assets/images/hero.jpg
-
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: amsterdamparentproject@gmail.com
-instagram_username: amsterdamparentproject
+instagram-username: amsterdamparentproject
+instagram-link: https://www.instagram.com/amsterdamparentproject/
+roadmap-link: https://trello.com/b/yUO7aIps/roadmap-amsterdam-parent-project-app
 
 # Google Analytics
 google-analytics:

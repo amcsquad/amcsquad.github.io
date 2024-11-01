@@ -1,16 +1,25 @@
 <section class="hero is-fullheight has-text-centered" id="hero">
   <div class="hero-body">
-    <div class="container">
-      <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
+    <div class="container main-page">
+      <img class="main-image" src="/{{site.logo-url}}" />
+      <h1 class="title main-title is-size-1 is-uppercase has-text-weight-bold">
         {{site.title}}
       </h1>
-      <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
+      <h3 class="subtitle has-text-weight-medium is-marginless">
         {{site.description}}
       </h3>
       <hr>
-      <a href="{{site.url}}{{site.baseurl}}/about"
-        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">About us</a>
-      </a>
+      <div class="link-tree">
+        <a href="{{site.url}}{{site.baseurl}}/events"
+          class="button is-rounded">Next event - €2 Sale</a>
+        </a>
+        <a href="{{site.instagram-link}}"
+        class="button is-rounded">Follow us on Instagram <i class="fas fa-external-link-alt"></i></a>
+        </a>
+        <a href="{{site.roadmap-link}}"
+          class="button is-rounded">Public roadmap <i class="fas fa-external-link-alt"></i></a>
+        </a>
+      </div>
     </div>
   </div>
 </section>
