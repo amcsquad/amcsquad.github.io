@@ -32,7 +32,7 @@ Your job is easy! Show up on the day, there is no ticket to reserve nor entry fe
             <li>For <b>toddlers</b>, arrive between 10:00 and 13:00</li>
             <li>For <b>babies</b>, arrive between 13:30 and 16:30</li>
         </ul>
-        <p>You can also choose to arrive on the day to fill any last-minute cancellations. We can't guarantee a spot, but we will try to accommodate you. Please note that if a ticketed seller does show up late, we will kindly ask you to leave to make space for them.</p>
+        <p>You can also choose to arrive on the day. We can't guarantee a spot, but we will try to accommodate you. Please note that if a ticketed seller does show up late and you're in their spot, we will kindly ask you to leave to make space for them.</p>
     </div>
     <div class="column">
         <h3>Before the event: Prepare to sell</h3>
@@ -50,7 +50,7 @@ Your job is easy! Show up on the day, there is no ticket to reserve nor entry fe
 
 ## For donations: How does it work?
 
-We’ll be collecting donations all day (until 17:00) for two charities: [Stichting Babyspullen](https://stichtingbabyspullen.nl/). 
+We’ll be collecting donations all day (until 17:00) for [Stichting Babyspullen](https://stichtingbabyspullen.nl/). 
 Accepted items:
 
 - **Clothes up to size 92**
