@@ -11,10 +11,10 @@ title: Amsterdam Parent Project
 # Description of the Site
 description: Connection and community for new parents in Amsterdam
 # URL of Image of the Site
-site-image: /assets/images/logo.png
+site-image: /assets/images/logo-background.png
 # Keywords of the Site
 site-keywords: Parents, Amsterdam
-# URL for the Image of custom Favicon
+# URL for the Image of custom Favicons
 favicon-url:  assets/images/favicon.ico
 logo-url: assets/images/logo.png
 logo-text-url: assets/images/logo-text.png
