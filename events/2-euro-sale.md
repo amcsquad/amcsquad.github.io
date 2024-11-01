@@ -66,7 +66,9 @@ Full list of accepted items: [Babystartpakket Overview](https://stichtingbabyspu
 
 **The entrance is in the back of the building!** When you arrive at the door, go to the right and you’ll see a small alleyway leading to a courtyard at the back. The doors will be open, just walk right in 😊
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4872.90893020463!2d4.866684212623281!3d52.362178947784976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e2218f071f%3A0x1917e78f631cd199!2sBuurtsalon%20Jeltje!5e0!3m2!1sen!2snl!4v1730466388489!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4872.90893020463!2d4.866684212623281!3d52.362178947784976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e2218f071f%3A0x1917e78f631cd199!2sBuurtsalon%20Jeltje!5e0!3m2!1sen!2snl!4v1730466388489!5m2!1sen!2snl" style="border:0;width:100%;height:300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 ## FAQ
 
