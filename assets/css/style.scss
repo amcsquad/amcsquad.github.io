@@ -81,6 +81,20 @@ a.navbar-item {
     letter-spacing: 0.25rem;
 }
 
+.hero-body {
+    flex-direction: column;
+    text-align: center;
+
+    h1.title {
+        padding-top: 1.5em;
+        margin: 0 !important;
+    }
+
+    .section {
+        padding-top: 0;
+    }
+}
+
 #about {
     .image {
         max-width: 20vmax;
@@ -396,6 +410,81 @@ a.navbar-item {
     .content {
         ul, ol, blockquote {
             display: inline-block;
+        }
+    }
+}
+
+#event {
+    .columns {
+        margin: 1rem;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    h2 {
+        padding: 0.3em 0;
+        border-bottom: 1px solid $sand;
+    }
+    .event-content-container {
+        display: flex;
+        .column {
+            margin-top: 0px;
+        }
+    }
+    .button {
+        background-color: $soft-green;
+        color: $white;
+        margin-bottom: 1em;
+    }
+}
+#event-card {
+ .image-container {
+    background-position: center;
+    background-size: cover;
+ }
+ text-align: left;
+}
+
+#event-highlight {
+    margin-left: 0;
+    padding-left: 1rem;
+    background-color: $soft-green;
+    color: $white;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+    h3 {
+        margin: 0.5rem 0;
+        font-weight: 400;
+        color: $goldenrod;
+    }
+    a {
+        color: $sand;
+        border-bottom: 1px dashed $white;
+        &:hover {
+            color: $goldenrod;
+        }
+    }
+    span {
+        padding-right: 0.5rem;
+    }
+    ul {
+        list-style-position: outside; 
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        font-size: 0.8em;
+    }
+    .event-tagline {
+        font-size: 0.8em;
+    }
+    .button {
+        background-color: $goldenrod;
+        color: $white;
+        border: 0px;
+        font-weight: 500;
+        &:hover {
+            color: $soft-green;
         }
     }
 }

@@ -10,14 +10,16 @@ layout: compress
     {% include navbar.html %}
     <section class="hero is-fullheight">
         <div class="hero-body">
+            <div>
+                <h1 class="title is-1 is-uppercase has-text-weight-bold">
+                    {{page.title}}
+                </h1>
+                <h2>
+                    {{page.description}}
+                </h2>
+            </div>
             <div class="container has-text-centered" id="page-section">
                 <div class="section">
-                    <h1 class="title is-1 is-uppercase has-text-weight-bold">
-                        {{page.title}}
-                    </h1>
-                    <h2>
-                        {{page.description}}
-                    </h2>
                     <hr class="has-background-black">
                     <div class="content is-marginless">
                         {{ content }}

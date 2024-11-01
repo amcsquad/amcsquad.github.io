@@ -28,10 +28,10 @@ email: amsterdamparentproject@gmail.com
 instagram_username: amsterdamparentproject
 
 # Google Analytics
-google-analytics: UA-163806439-1
+google-analytics:
 
 # Disqus
-disqus-shortname: thedevslot
+disqus-shortname:
 
 # Name of the Author
 author-name: Alex Siega

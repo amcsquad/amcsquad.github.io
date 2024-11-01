@@ -1,0 +1,36 @@
+<div class="column has-text-left-desktop has-text-left-tablet" id="event-highlight">
+    <div>
+        <p class="event-tagline">
+          {{ page.tagline }}
+        </p>
+        <h3><span class="icon">📅</span>{{ page.date | date: "%d %-B, %Y" }}</h3>
+            <ul>
+                <li>Toddlers (size 80 - 104) from <b>10:30 to 13:30</b></li>
+                <li>
+                    Babies (up to size 80) from <b>14:00 to 17:00</b>
+                </li>
+            </ul>
+        <h3><span class="icon">📍</span>{{ page.location-name}}</h3>
+            <ul>
+                <li>
+                    <a href={{page.location-link}}>{{ page.location-address }}</a>
+                </li>
+            </ul>
+        <h3><span class="icon">🏃🏼</span>No tickets required - just show up!</h3>
+            <ul>
+                <li>Buyers enter free 🤑</li>
+                <li>
+                    Sellers pay €10 for a spot on arrival -- or reserve a spot ahead of time <a href="{{page.url}}">here</a>.
+                </li>
+            </ul>
+        <h3><span class="icon">🤗</span>Sale + community hang</h3>
+            <ul>
+                <li>Coffee and tea</li>
+                <li>A place for parents to hang out and meet each other</li>
+                <li>A play area for babies/kids</li>
+                <li>Donation corner for a charity helping new moms in need</li>  
+            </ul>
+        <a href="{{site.url}}{{site.baseurl}}/{{page.url}}#faq"
+            class="button">FAQ</a>
+    </div>
+</div>
