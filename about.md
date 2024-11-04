@@ -1,6 +1,6 @@
 ---
 title: About
 layout: about
-description: Learn about our mission and the founders
+description: Who we are and what we stand for
 ---
 

@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: Amsterdam Parent Project
 # Description of the Site
-description: Connection and community for new parents in Amsterdam
+description: Peer-to-peer support for new parents, (em)powered by professionals
 # URL of Image of the Site
 site-image: /assets/images/web-share.png
 # Keywords of the Site
@@ -32,14 +32,20 @@ google-analytics:
 # Disqus
 disqus-shortname:
 
-# Name of the Author
-author-name: Alex Siega
-# URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
-# 60 Words About the Author
-author-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit. Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
-# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://www.instagram.com/amsterdamparentproject/
+# Authors
+alex-name: Alex Siega
+alex-title: Founder, Amsterdam Parent Project
+alex-image: /assets/images/about/alex-square.jpg
+alex-bio: I’m an expat mama and technologist in Amsterdam West, working for government, the tech industry, and a nonprofit to make tech a more inclusive place for women. The Amsterdam Parent Project was borne from my mission to empower every new parent who felt as helpless as I did after being given the advice many times that “it’s just a phase.” I’ve built an amazing personal community of peers and professionals to help me through, and I want all local parents to have that same support to survive and thrive in new parenthood.
+alex-linkedin: https://www.linkedin.com/in/alexandrasiega/
+alex-website: https://www.instagram.com/amsterdamparentproject/
+
+miriam-name: Dr. Irena Domachowska
+miriam-title: Co-Founder, Amsterdam Parent Project
+miriam-image: /assets/images/about/miriam-square.png
+miriam-bio: 
+miriam-linkedin: https://www.linkedin.com/in/irena-domachowska-709b3a54/
+miriam-website: 
 
 # SASS
 sass:
