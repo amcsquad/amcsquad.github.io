@@ -389,6 +389,12 @@ a.navbar-item {
             color: white;
         }
 
+        .link-quiet {
+            color: $white;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
         @media (max-width: 480px) {
             display: flex;
             flex-direction: column;
