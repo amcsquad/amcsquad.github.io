@@ -36,7 +36,7 @@ disqus-shortname:
 alex-name: Alex Siega
 alex-title: Founder, Amsterdam Parent Project
 alex-image: /assets/images/about/alex-square.jpg
-alex-bio: I’m an expat mama and technologist in Amsterdam West, working for government, the tech industry, and a nonprofit to make tech a more inclusive place for women. The Amsterdam Parent Project was borne from my mission to empower every new parent who felt as helpless as I did after being given the advice many times that “it’s just a phase.” I’ve built an amazing personal community of peers and professionals to help me through, and I want all local parents to have that same support to survive and thrive in new parenthood.
+alex-bio: Founder of APP and expat mama in Amsterdam West
 alex-linkedin: https://www.linkedin.com/in/alexandrasiega/
 alex-instagram: https://www.instagram.com/amsterdamparentproject/
 
@@ -46,6 +46,14 @@ miriam-image: /assets/images/about/miriam-square.png
 miriam-bio: 
 miriam-linkedin: https://www.linkedin.com/in/irena-domachowska-709b3a54/
 miriam-instagram: 
+
+heather-name: Heather Berry
+heather-title: Consultant, Fourth Trimester Program and Ask APP contributor
+heather-image: /assets/images/about/heather-square.jpeg
+heather-bio: 
+heather-linkedin: https://www.linkedin.com/in/heather-berry 
+heather-instagram: https://www.instagram.com/the4thtrimestersupport/
+heather-website: https://berrycareandcoaching.com
 
 # SASS
 sass:
