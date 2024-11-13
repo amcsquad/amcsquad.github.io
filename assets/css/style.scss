@@ -86,6 +86,8 @@ a.navbar-item {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+        max-width: 500px;
 
         i {
             color: $sand;
@@ -105,6 +107,14 @@ a.navbar-item {
             }
             &:active, &:focus {
                 border: 2px solid $soft-green;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .button {
+                font-size: 1.2em;
+                text-wrap: auto;
+                height: auto;
             }
         }
     }
@@ -130,6 +140,10 @@ a.navbar-item {
 
     .section {
         padding-top: 0;
+    }
+
+    h2 {
+        padding: 0.5em 2em 0;
     }
 }
 
@@ -594,4 +608,39 @@ a.navbar-item {
 #calendar {
     width: -webkit-fill-available;
     margin: 2rem;
+}
+
+.is-fullwidth {
+    width: 80%;
+}
+
+// For Ask APP contributor block
+.contributions {
+    ul {
+        margin: 0 0 1em 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.section {
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.button.submit {
+    background-color: $soft-green;
+    color: $white;
+    font-size: 1.2em;
+    text-wrap: auto;
+    height: auto;
+    border: none;
+
+    &:hover {
+        background-color: $goldenrod;
+        color: $charcoal;
+    }
 }
