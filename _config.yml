@@ -55,6 +55,9 @@ heather-linkedin: https://www.linkedin.com/in/heather-berry
 heather-instagram: https://www.instagram.com/the4thtrimestersupport/
 heather-website: https://berrycareandcoaching.com
 
+# Program images
+newlsetter-banner: /assets/images/just-a-phase-banner.png
+
 # SASS
 sass:
   sass_dir: _sass

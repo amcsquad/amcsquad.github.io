@@ -10,22 +10,19 @@
       </h3>
       <hr>
       <div class="link-tree">
+        <a href="{{site.url}}{{site.base-url}}/subscribe"
+        class="button is-rounded">Subscribe to our newsletter</a>
         {% for event in site.data.events offset: 0 limit:1 %}
           <a href="{{event.link}}"
             class="button is-rounded">
             
             Next event - {{event.name}}</a>
-          </a>  
         {% endfor %}
-        <a href="{{site.url}}{{site.base-url}}/subscribe"
-        class="button is-rounded">Subscribe to our newsletter</a>
-        </a>
+
         <a href="{{site.instagram-link}}"
         class="button is-rounded">Follow us on Instagram <i class="fas fa-external-link-alt"></i></a>
-        </a>
         <a href="{{site.roadmap-link}}"
           class="button is-rounded">Public roadmap <i class="fas fa-external-link-alt"></i></a>
-        </a>
       </div>
     </div>
   </div>
