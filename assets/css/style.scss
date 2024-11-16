@@ -10,12 +10,54 @@
     padding: 0.5em;
 }
 
+// Show the nav again on small screens
+@media screen and (max-width: 500px) {
+    #navbar {
+        padding: 0.5em 0;
+    }
+    .hero.is-fullheight .hero-body {
+        margin-top: 6em;
+    }
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .navbar-menu {
+        display: block;
+        box-shadow: none;
+        background-color: $sand;
+        // color: $white;
+
+        .navbar-end {
+            display: flex;
+            justify-content: center;
+            box-shadow: none;
+            align-items: center;
+            background-color: $soft-green;
+
+            a.navbar-item {
+                color: $white;
+                &:hover, &:active, &:focus {
+                    background: none;
+                    color: $goldenrod;
+                }
+            }
+            a.navbar-item.is-active {
+                color: $goldenrod;
+                background: none;
+            }
+        }
+    }
+    .navbar-end a.navbar-item.is-active {
+        background-color: none !important;
+    }
+}
+
 a.navbar-item {
     color: $charcoal;
-    .is-active {
-        background-color: $white;
-        color: $soft-green !important;
-    }
     &:focus {
         background-color: $white;
         color: $charcoal;  
@@ -26,11 +68,16 @@ a.navbar-item {
     }
 }
 
+a.navbar-item.is-active {
+    background-color: $white;
+    color: $soft-green;
+}
+
 .navbar-menu {
     background-color: $white;
     font-size: 1.2em;
 
-    &:hover {
+    &:hover, &:active {
         background-color: $white;
         color: $soft-green;
     }
