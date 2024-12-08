@@ -29,17 +29,30 @@ permalink: /portfolio/
                     </div>
                 </div>
                 <hr>
-                <h2>슬라이드 갤러리</h2>
-                <div class="columns is-multiline">
-                    <div class="column is-one-third">
-                        <img src="/assets/images/slide1.jpg" alt="Slide 1">
-                    </div>
-                    <div class="column is-one-third">
-                        <img src="/assets/images/slide2.jpg" alt="Slide 2">
-                    </div>
-                    <div class="column is-one-third">
-                        <img src="/assets/images/slide3.jpg" alt="Slide 3">
-                    </div>
+<h2>슬라이드 갤러리</h2>
+<div class="columns is-multiline">
+    <!-- 슬라이드 1: 이미지 -->
+    <div class="column is-one-third">
+        <img src="/assets/images/포트폴리오_Jay.jpg" alt="Slide 1">
+    </div>
+
+    <!-- 슬라이드 2: 동영상 -->
+    <div class="column is-one-third">
+        <video controls width="100%" poster="/assets/images/slide2.jpg">
+            <source src="/assets/videos/project2.mp4" type="video/mp4">
+            동영상을 재생하려면 최신 브라우저를 사용하세요.
+        </video>
+    </div>
+
+    <!-- 슬라이드 3: 동영상 -->
+    <div class="column is-one-third">
+        <video controls width="100%" poster="/assets/images/slide3.jpg">
+            <source src="/assets/videos/project3.mp4" type="video/mp4">
+            동영상을 재생하려면 최신 브라우저를 사용하세요.
+        </video>
+    </div>
+</div>
+
                 </div>
             </div>
         </div>
