@@ -35,8 +35,6 @@ permalink: /portfolio/
     <div class="column is-one-third">
         <img src="/assets/images/포트폴리오_Jay.jpg" alt="Slide 1">
     </div>
-
-    <!-- 슬라이드 2: 동영상 -->
     <div class="column is-one-third">
         <video controls width="100%" poster="/assets/images/poster.png">
             <source src="/assets/Battery 영상_230922.mp4" type="video/mp4">
@@ -44,7 +42,6 @@ permalink: /portfolio/
         </video>
     </div>
 </div>
-
                 </div>
             </div>
         </div>
