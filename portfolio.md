@@ -38,16 +38,8 @@ permalink: /portfolio/
 
     <!-- 슬라이드 2: 동영상 -->
     <div class="column is-one-third">
-        <video controls width="100%" poster="/assets/images/slide2.jpg">
-            <source src="/assets/videos/project2.mp4" type="video/mp4">
-            동영상을 재생하려면 최신 브라우저를 사용하세요.
-        </video>
-    </div>
-
-    <!-- 슬라이드 3: 동영상 -->
-    <div class="column is-one-third">
-        <video controls width="100%" poster="/assets/images/slide3.jpg">
-            <source src="/assets/videos/project3.mp4" type="video/mp4">
+        <video controls width="100%" poster="/assets/images/poster.png">
+            <source src="/assets/Battery 영상_230922.mp4" type="video/mp4">
             동영상을 재생하려면 최신 브라우저를 사용하세요.
         </video>
     </div>
