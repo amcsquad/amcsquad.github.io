@@ -2,9 +2,9 @@
 markdown: kramdown
 
 # URL of the Site
-url: 'https://amcsquad.github.io/'
+url: "https://amcsquad.github.io/"
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: /
+baseurl: ""
 
 title: The AMC Squad
 description: An epic retro-style shooter
@@ -22,26 +22,6 @@ extra-navlinks:
     text: amcduke32 game engine source code
   - url: https://gitlab.com/fpiesche/amc-squad-data
     text: Game data git repository
-
-# Social Media and Contact
-# If you don't want to use any icon, you can leave them blank.
-email: /
-facebook_username: /
-twitter_username: /
-instagram_username: /
-linkedin_username: /
-github_username:  /
-youtube_channel_id: /
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
-
-# Google Analytics
-google-analytics: ""
-
-# Disqus
-disqus-shortname: ""
 
 # SASS
 sass:
@@ -62,8 +42,7 @@ compress_html:
 
 # Defaults
 defaults:
-  -
-    scope:
+  - scope:
       type: 'posts'
     values:
       layout: post
@@ -71,8 +50,7 @@ defaults:
       description: ""
       tags:
         - ""
-  -
-    scope:
+  - scope:
       type: 'pages'
     values:
       layout: page

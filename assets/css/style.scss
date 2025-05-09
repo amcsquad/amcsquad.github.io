@@ -6,10 +6,11 @@
 #navbar {
     font-family: "BankGothic Md BT", sans-serif;
     opacity: 0.95;
+    position: absolute;
 }
 
 #navbar img {
-    height: 1.5em;
+    height: 2em;
 }
 
 .is-active {
@@ -56,7 +57,7 @@ a.navbar-item.is-active {
 
     &::before {
         filter: blur(0.15rem);
-        background-image: url({{site.heroimage}});
+        // background-image: url({{site.heroimage}});
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -70,7 +71,9 @@ a.navbar-item.is-active {
         content: "";
     }
 }
+
 .title {
+    font-family: "BankGothic Md BT", sans-serif;
     margin: auto 0.75rem!important;
 }
 
