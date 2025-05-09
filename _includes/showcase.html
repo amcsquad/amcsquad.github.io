@@ -1,16 +1,25 @@
-<section class="hero is-fullheight has-text-centered" id="hero">
+{% for image in site.heroes %}
+<section class="hero is-fullheight has-text-centered" id="hero" style="background-image: '{{ hero.image }}'">
   <div class="hero-body">
     <div class="container">
       <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
-        {{site.title}}
+        {{hero.title}}
       </h1>
       <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
-        {{site.description}}
+        {{hero.description}}
       </h3>
       <hr>
-      <a href="{{site.url}}{{site.baseurl}}/#about"
-        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Read More</a>
+      {% if hero.url %}
+      <a href="{{ hero.url }}"
+        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">
+        {% if hero.link-text %}
+          {{ hero.link-text }}
+        {% else %}
+          Read more...
+        {% endif %}
       </a>
+      {% endif %}
     </div>
   </div>
 </section>
+{% endfor %}
