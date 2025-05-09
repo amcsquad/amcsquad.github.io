@@ -21,11 +21,11 @@ favicon-url: https://cdn.jsdelivr.net/gh/amcsquad/amcsquad.github.io/assets/imag
 heroes:
   - title: The AMC Squad
     description: An epic retro-style shooter
-    image: assets/images/heroes/banner-v450.png
+    image: /assets/images/heroes/banner-v450.png
     url: ""
   - title: The AMC Squad
     description: An epic retro-style shooter
-    image: assets/images/heroes/faceposter2b.png
+    image: /assets/images/heroes/faceposter2b.png
     url: ""
 
 # Social Media and Contact
