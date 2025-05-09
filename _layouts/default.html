@@ -8,8 +8,9 @@ layout: compress
 
 <body>
   {% include navbar.html %}
-  {% include showcase.html %}
-  <!-- {% include about.html %} -->
+  {% for hero in site.heroes %}
+    {% include showcase.html %}
+  {% endfor %}
   {% include contact.html %}
   <!--Footer begins here-->
   {% include footer.html %}
