@@ -8,6 +8,10 @@
     opacity: 0.95;
 }
 
+#navbar img {
+    height: 1.5em;
+}
+
 .is-active {
     font-weight: 600;
 }
@@ -16,6 +20,10 @@
     border: none;
     right: 0;
     left: auto;
+}
+
+.navbar-dropdown > .navbar-item {
+    font-family: "Poppins", sans-serif;
 }
 
 a.navbar-item:hover,
@@ -65,7 +73,9 @@ a.navbar-item.is-active {
 .title {
     margin: auto 0.75rem!important;
 }
+
 .subtitle {
+    font-family: "BankGothic Md BT", sans-serif;
     letter-spacing: 0.25rem;
 }
 
