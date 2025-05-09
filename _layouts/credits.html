@@ -11,12 +11,12 @@ layout: compress
   <div style="display: block; height: 3em;" />
   <div class="title">The AMC Team</div>
   {% for credit in site.data.credits.core %}
-    {% include about.html credit=credit %}
+    {% include credit.html credit=credit %}
   {% endfor %}
   <hr />
   <div class="title">Contributors</div>
   {% for credit in site.data.credits.contributors %}
-    {% include about.html credit=credit %}
+    {% include credit.html credit=credit %}
   {% endfor %}
   {% include footer.html %}
 </body>
