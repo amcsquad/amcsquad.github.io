@@ -1,4 +1,3 @@
-{% if site.html_pages %}
 <div class="navbar-item has-dropdown is-hoverable">
     <a class="navbar-link">
         MORE
@@ -12,10 +11,9 @@
         </a>
         {% endunless %}
         {% endfor %}
-        <!-- <hr class="navbar-divider">
-    <a class="navbar-item">
-      Report an issue
-    </a> -->
+        <hr class="navbar-divider">
+        {% for link in site.extra-navlinks %}
+        <a href="{{ link.url }}" class="navbar-item">{{ link.text }}</a>
+        {% endfor %}
     </div>
 </div>
-{% endif %}

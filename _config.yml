@@ -6,28 +6,22 @@ url: 'https://amcsquad.github.io/'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: /
 
-# Title of the Site
 title: The AMC Squad
-# Description of the Site
 description: An epic retro-style shooter
-# URL of Image of the Site
 site-image: /assets/images/meta.png
 logo: /assets/images/logo.png
-# Keywords of the Site
 site-keywords: shooter, game, retro, boomshoot, amc
-# URL for the Image of custom Favicon
 favicon-url: /assets/images/icon.png
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroes:
-  - title: <img src="/assets/images/logo.png" alt="The AMC Squad"/>
-    description: An epic retro-style shooter
-    image: /assets/images/heroes/banner-v450.png
-    url: /about
-  - title: <img src="/assets/images/logo.png" alt="The AMC Squad"/>
-    description: An epic retro-style shooter
-    image: /assets/images/heroes/faceposter2b.png
-    url: /about
+  - /assets/images/heroes/banner-v450.png
+  - /assets/images/heroes/faceposter2b.png
+
+extra-navlinks:
+  - url: https://github.com/dibollinger/amcduke32
+    text: amcduke32 game engine source code
+  - url: https://gitlab.com/fpiesche/amc-squad-data
+    text: Game data git repository
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
