@@ -1,0 +1,26 @@
+core:
+  - name: James Stanfield
+    role: Project Lead, Level Designer, Programmer
+    joined: OG
+    image: /assets/images/portraits/james.png
+    about: It's James!
+    urls:
+      - url: https://bsky.app/profile/jblade35.bsky.social
+        caption: Bluesky
+      - url: https://www.youtube.com/channel/UCLtO2qu7-tPsKMgNthBqh4w
+        caption: Youtube
+  - name: Sang
+    role: Level Designer, Programmer
+    joined: OG
+    image: /assets/images/portraits/sang.png
+    about: It's Sang!
+    urls: []
+
+contributors:
+  - name: Solais
+    role: Level Designer
+    image: /assets/images/portraits/solais.png
+    about: Solais has contributed a number of bonus missions to the game.
+    urls:
+      - url: https://bsky.app/profile/solais.bsky.social
+        caption: Bluesky
