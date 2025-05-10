@@ -1,7 +1,7 @@
 ---
 title: Episode 5 release date
 layout: post
-post-image: ""
+# post-image: ""
 description: It'll be out when it's done.
 tags:
 - game

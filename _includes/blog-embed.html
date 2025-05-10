@@ -1,18 +1,16 @@
 <section class="hero is-fullheight has-text-centered has-background-white-ter" id="recent-posts">
     <div class="hero-body">
-        <div class="container">
-            <div class="container columns is-centered title">Recent blog posts</div>
-            <div class="columns">
-                {% for post in site.posts limit:3 %}
-                <div class="column is-one-third-desktop is-one-third-tablet is-one-third-fullhd">
-                    {% include blog-card.html %}
-                </div>
-                {% endfor %}
+        <div class="container columns is-centered title">Recent blog posts</div>
+        <div class="columns">
+            {% for post in site.posts limit:3 %}
+            <div class="column is-one-third-desktop is-one-third-tablet is-one-third-fullhd">
+                {% include blog-card.html %}
             </div>
-            <div class="container columns is-centered">
-                <div>
-                    <a href="/blog" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Read more...</a>
-                </div>
+            {% endfor %}
+        </div>
+        <div class="container columns is-centered">
+            <div>
+                <a href="/blog" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Read more...</a>
             </div>
         </div>
     </div>
