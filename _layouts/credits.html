@@ -8,16 +8,36 @@ layout: compress
 
 <body>
   {% include navbar.html %}
-  <div style="display: block; height: 3em;" />
-  <div class="title">The AMC Team</div>
-  {% for credit in site.data.credits.core %}
-    {% include credit.html credit=credit %}
-  {% endfor %}
-  <hr />
-  <div class="title">Contributors</div>
-  {% for credit in site.data.credits.contributors %}
-    {% include credit.html credit=credit %}
-  {% endfor %}
-  {% include footer.html %}
+  <section class="hero is-fullheight has-background-black-ter" id="team">
+    <div class="title"><h1>The AMC Team</h1></div>
+    <div class="container">
+      <div class="hero-body">
+          <div class="container">
+              <div class="columns">
+                {% for credit in site.data.credits.core %}
+                  {% include credit.html credit=credit %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight has-text-centered has-background-black-ter" id="contributors">
+      <div class="title"><h1>Contributors</h1></div>
+      <div class="container">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                  {% for credit in site.data.credits.contributors %}
+                    {% include credit.html credit=credit %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {% include footer.html %}
 </body>
 </html>

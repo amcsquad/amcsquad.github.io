@@ -12,6 +12,7 @@ site-image: /assets/images/meta.png
 logo: /assets/images/logo.svg
 site-keywords: shooter, game, retro, boomshoot, amc
 favicon-url: /assets/images/icon.png
+accent-colour: #9bb7ffff
 
 heroes:
   - /assets/images/heroes/banner-v450.png

@@ -1,7 +1,7 @@
-<section class="hero is-fullheight has-text-centered" id="hero">
-  <div class="hero-body slideshow">
+<section class="hero has-text-centered" id="hero">
+  <div class="hero-body">
     {% for hero in site.heroes %}
-    <div class="slideshow-image" style="background-image: url('{{ hero }}')"></div>
+    <div class="slideshow-image" style="background: transparent; background-image: url('{{ hero }}')"></div>
     {% endfor %}
     <div class="container">
       <img src="{{ site.logo }}" />

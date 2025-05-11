@@ -1,27 +1,25 @@
-<section class="hero is-fullheight has-text-centered has-background-white-ter" id="about">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
-                    <figure class="image">
-                        <img class="is-rounded" src="{% if include.credit.image %}{{include.credit.image}}{% else %}/assets/images/portraits/default.png{% endif %}" alt="{{include.name}}">
-                    </figure>
-                </div>
-                <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                    <p>{{include.credit.name}} {% if include.credit.joined %}(joined {{include.credit.joined}}){% endif %}</p>
-                    <p>{{include.credit.role}}</p>
-                    <p>{{include.credit.about}}</p>
-                    <br>
-                    {% for url in include.credit.urls %}
-                    <div class="container columns is-centered">
-                        <div>
-                            <a href="{{url.url}}"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">{{url.caption}}</a>
-                            </a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
+<div class="column is-one-half-desktop is-one-half-tablet is-one-half-fullhd">
+    <div>
+        <div class="column is-one-fifth-desktop column is-one-fifth-tablet column is-one-fifth-fullhd">
+        <figure class="image">
+            <img class="is-rounded" src="{% if credit.image %}{{credit.image}}{% else %}/assets/images/portraits/default.png{% endif %}" alt="{{name}}" />
+        </figure>
+        </div>
+        <div class="column title"><h2>{{credit.name}}</h2></div>
+    </div>
+        <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+        {% if credit.joined %}<p>joined {{credit.joined}}</p>{% endif %}
+        <p>{{credit.role}}</p>
+        <p>{{credit.about}}</p>
+        <br>
+        {% for url in credit.urls %}
+        <div class="container columns is-centered">
+            <div>
+                <a href="{{url.url}}"
+                    class="button is-rounded is-uppercase has-text-weight-normal is-white is-outlined">{{url.caption}}</a>
+                </a>
             </div>
         </div>
-</section>
+        {% endfor %}
+    </div>
+</div>

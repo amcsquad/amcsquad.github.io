@@ -6,7 +6,7 @@
 #navbar {
     font-family: "BankGothic Md BT", sans-serif;
     opacity: 0.95;
-    position: absolute;
+    position: fixed;
 }
 
 #navbar img {
@@ -29,16 +29,17 @@
 
 a.navbar-item:hover,
 .navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    background-color: rgba($color: rgb(84, 132, 255), $alpha: 0.25) !important;
     color: white !important;
 }
 
 a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    filter: drop-shadow(0 0 .3rem rgb(84, 132, 255));
+    background-color: rgba($color: rgb(84, 132, 255), $alpha: 0.25) !important;
     color: white !important;
 
     &:hover {
-        background-color: rgba($color: #fff, $alpha: 0.25) !important;
+        background-color: rgba($color: rgb(84, 132, 255), $alpha: 0.25) !important;
         color: grey;
     }
 }
@@ -75,6 +76,31 @@ a.navbar-item.is-active {
 .title {
     font-family: "BankGothic Md BT", sans-serif;
     margin: auto 0.75rem!important;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-family: "BankGothic Md BT", sans-serif;
+    margin: auto 0.75rem!important;
+    font-size: 2em;
+    text-align: right;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    filter: drop-shadow(0 0 .25rem rgb(84, 132, 255));
+}
+
+h2 {
+    font-family: "BankGothic Md BT", sans-serif;
+    margin: auto 0.75rem!important;
+    font-size: 1.25em;
+    text-align: right;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    filter: drop-shadow(0 0 .25rem rgb(84, 132, 255));
 }
 
 .subtitle {
