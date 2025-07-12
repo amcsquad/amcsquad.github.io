@@ -1,5 +1,8 @@
 name: Jekyll site CI
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
