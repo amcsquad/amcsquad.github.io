@@ -1,7 +1,7 @@
 ---
 title: New website!
 layout: post
-post-image: ""
+image: new-website.png
 description: Wherein we announce the new AMC Squad website.
 tags:
 - game
