@@ -42,15 +42,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#navbar {
-    .navbar-burger {
-        span:nth-child(2) {
-            left: calc(50%);
-            width: 8px;
-        }
-    }
-}
-
 .is-active {
     font-weight: bold;
 }
@@ -73,7 +64,6 @@ hr {
 
 .searchResult {
     border: 0.2rem dotted var(--accent-color);
-    // background-color: var(--highlight-color);
     a {
         .title {
             text-decoration: underline;
