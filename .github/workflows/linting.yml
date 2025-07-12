@@ -1,0 +1,45 @@
+name: Linting
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  markdownlint:
+    name: Lint Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: markdownlint
+        uses: reviewdog/action-markdownlint@3667398db9118d7e78f7a63d10e26ce454ba5f58 # v0.26.2
+        with:
+          filter_mode: diff_context
+          reporter: github-pr-review
+
+  yamllint:
+    name: Lint YAML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: yamllint
+        uses: reviewdog/action-yamllint@f01d8a48fd8d89f89895499fca2cff09f9e9e8c0 # v1.21.0
+        with:
+          filter_mode: diff_context
+          reporter: github-pr-review
+
+  stylelint:
+    name: Lint CSS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Install stylelint
+        run: |
+          npm install stylelint stylelint-config-standard-scss -D
+          chmod -R a+rwx *
+      - name: stylelint
+        uses: reviewdog/action-stylelint@dd2b435cc6a7c82705307a9dee740c9bbaa10411 # v1.30.2
+        with:
+          filter_mode: diff_context
+          reporter: github-pr-review
+          stylelint_input: "**/*.scss"
