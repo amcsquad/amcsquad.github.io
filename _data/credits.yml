@@ -1,8 +1,8 @@
 core:
   - name: James Stanfield
+    id: james
     role: Project Lead, Level Designer, Programmer
     joined: OG
-    image: /assets/images/portraits/james.png
     about: It's James!
     urls:
       - url: https://bsky.app/profile/jblade35.bsky.social
@@ -10,17 +10,105 @@ core:
       - url: https://www.youtube.com/channel/UCLtO2qu7-tPsKMgNthBqh4w
         caption: Youtube
   - name: Sang
+    id: sang
     role: Level Designer, Programmer
     joined: OG
-    image: /assets/images/portraits/sang.png
     about: It's Sang!
+  - name: Mikko
+    id: mikko
+    role: Level Designer
+    joined: "?"
+    about: It's Mikko!
+    urls: []
+  - name: HiveBoSs
+    id: hiveboss
+    role: Audio & Music
+    joined: "?"
+    about: It's HiveBoSs!
+    urls:
+      - url: https://www.youtube.com/@HiveBoSsOfficial
+        caption: YouTube
+  - name: Loke
+    id: loke
+    role: Level Designer, Trailers
+    joined: "?"
+    about: It's Loke!
+    urls: []
+  - name: Micky
+    id: micky
+    role: "?"
+    joined: "?"
+    image: /assets/images/portraits/micky.png
+    about: It's Micky!
+    urls: []
+  - name: Wheaton
+    id: wheaton
+    role: Level Designer
+    joined: "?"
+    about: It's Wheaton!
+    urls: []
+  - name: Cedric "Zaxtor Znort" Lutes
+    id: zaxtor
+    role: Level Designer
+    joined: "?"
+    about: Cedric was one of the earliest members of the AMC team but sadly passed away in 2019.
     urls: []
 
 contributors:
-  - name: Solais
+  - name: Ali
+    id: ali
+    role: Voice Actor
+    joined: "?"
+    about: Voice Actor, Game Dev and Gamer from the UK
+    urls:
+      - url: https://alicelcoates.wixsite.com/welcome
+        caption: Website
+  - name: Eddie Teach
+    id: eddie
     role: Level Designer
-    image: /assets/images/portraits/solais.png
+    about: Eddie left the team in late 2024.
+    urls: []
+  - name: Jolteon3D
+    id: jolteon
+    role: Level Designer
+    about: It's Jolteon!
+    urls: []
+  - name: Lindz
+    id: lindz
+    role: Voice Actor
+    about: It's Lindz!
+    urls: []
+  - name: Lt. Havoc
+    id: lthavoc
+    role: "?"
+    about: It's Havoc!
+    urls: []
+  - name: Red
+    id: red
+    role: "?"
+    about: It's red!
+    urls: []
+  - name: Solais
+    id: solais
+    role: Level Designer
     about: Solais has contributed a number of bonus missions to the game.
     urls:
       - url: https://bsky.app/profile/solais.bsky.social
         caption: Bluesky
+  - name: VIE
+    id: vie
+    role: "?"
+    about: It's Vie!
+    urls: []
+  - name: Zairainel
+    id: zairainel
+    role: "?"
+    about: It's Zairainel!
+    urls:
+      - url: https://allmylinks.com/zairainel
+        caption: Link page
+  - name: Zero
+    id: zero
+    role: "?"
+    about: It's Zero!
+    urls: []
