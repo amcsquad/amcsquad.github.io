@@ -1,17 +1,1 @@
----
-layout: compress
----
-[
-  {% for post in site.posts %}
-    {
-      "title"    : "{{ post.title | escape }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date | date: '%-B %d, %Y' }}",
-      "description" : "{{ post.description | strip_newlines | strip_html | strip | escape }}",
-      "content" : "{{ post.content | truncate: '300' | strip_html | strip_newlines | strip | escape }}",
-      "image" : "{{post.post-image}}",
-      "readtime" : "{{ post.content | number_of_words | divided_by:180 }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
-]
+[ { "title" : "Episode 5 Trailer", "tags" : "game, info", "url" : "https://amcsquad.github.io//blog/ep5-trailer", "date" : "July 11, 2025", "description" : "Come get your teaser video here!", "content" : "Here’s a brand new trailer for the upcoming Episode 5 by Loke!", "image" : "", "readtime" : "0" } , { "title" : "New website!", "tags" : "game, info", "url" : "https://amcsquad.github.io//blog/new-website", "date" : "May 09, 2025", "description" : "Wherein we announce the new AMC Squad website.", "content" : "We’ve got a new website!", "image" : "", "readtime" : "0" } , { "title" : "Episode 5 release date", "tags" : "game, info", "url" : "https://amcsquad.github.io//blog/ep5-releasedate", "date" : "May 09, 2025", "description" : "It&#39;ll be out when it&#39;s done.", "content" : "AMC Squad Episode 5 to be released when we’re good and ready, thank you very much.", "image" : "", "readtime" : "0" } , { "title" : "March 2025 News", "tags" : "game, info", "url" : "https://amcsquad.github.io//blog/march-update", "date" : "March 03, 2025", "description" : "An update on what we&#39;ve been doing.", "content" : "AMC Squad March 2025 NewsAs usual it’s been almost a year since the last news post; busy at work on AMC Squad Episode Five. We’re aiming for the tail end of 2025 but of course the sooner the better.AMC Squad Usermaps&lt;/...", "image" : "", "readtime" : "1" } ]
