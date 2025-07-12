@@ -1,7 +1,11 @@
 ---
 ---
 
-@import "main.scss";
+@use "main.scss";
+
+:root {
+    --accent-color:#9bb7ffff;
+}
 
 #navbar {
     font-family: "BankGothic Md BT", sans-serif;
@@ -57,8 +61,8 @@ a.navbar-item.is-active {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 
     &::before {
-        filter: blur(0.15rem);
-        // background-image: url({{site.heroimage}});
+        filter: blur(0.3rem);
+        background-image: url({{ site.heroimage }});
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
