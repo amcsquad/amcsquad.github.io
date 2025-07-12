@@ -23,6 +23,8 @@ heroes:
 extra-navlinks:
   - url: https://github.com/dibollinger/amcduke32
     text: amcduke32 game engine source code
+  - url: https://github.com/amcsquad/amcsquad.github.io
+    text: AMC Squad website source code
   - url: https://gitlab.com/fpiesche/amc-squad-data
     text: Game data git repository
 
