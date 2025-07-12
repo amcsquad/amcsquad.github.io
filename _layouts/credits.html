@@ -8,36 +8,22 @@ layout: compress
 
 <body>
   {% include navbar.html %}
-  <section class="hero is-fullheight has-background-black-ter" id="team">
+  <section class="has-background-black-ter" id="team">
     <div class="title"><h1>The AMC Team</h1></div>
-    <div class="container">
-      <div class="hero-body">
-          <div class="container">
-              <div class="columns">
-                {% for credit in site.data.credits.core %}
-                  {% include credit.html credit=credit %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hero is-fullheight has-text-centered has-background-black-ter" id="contributors">
-      <div class="title"><h1>Contributors</h1></div>
-      <div class="container">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                  {% for credit in site.data.credits.contributors %}
-                    {% include credit.html credit=credit %}
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    {% include footer.html %}
+    <div class="columns">
+      {% for credit in site.data.credits.core %}
+        {% include credit.html credit=credit %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="has-background-black-ter" id="contributors">
+    <div class="title"><h1>Contributors</h1></div>
+    <div class="columns">
+      {% for credit in site.data.credits.contributors %}
+        {% include credit.html credit=credit %}
+      {% endfor %}
+    </div>
+  </section>
+  {% include footer.html %}
 </body>
 </html>
