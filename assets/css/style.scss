@@ -43,7 +43,7 @@ a.navbar-item.is-active {
     color: white !important;
 
     &:hover {
-        background-color: rgba($color: rgb(84, 132, 255), $alpha: 0.25) !important;
+        background-color: rgba($color: var(--accent-color), $alpha: 0.25) !important;
         color: grey;
     }
 }
@@ -52,6 +52,10 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
+.navbar-dropdown a.navbar-item:not(.is-active, .is-selected) {
+    background-color: black;
+    color: lightgrey;
+}
 
 #hero {
     background: rgb(0, 0, 0);
