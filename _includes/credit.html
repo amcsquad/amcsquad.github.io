@@ -1,25 +1,33 @@
-<div class="column is-one-half-desktop is-one-half-tablet is-one-half-fullhd">
-    <div>
-        <div class="column is-one-fifth-desktop column is-one-fifth-tablet column is-one-fifth-fullhd">
-        <figure class="image">
-            <img class="is-rounded" src="{% if credit.image %}{{credit.image}}{% else %}/assets/images/portraits/default.png{% endif %}" alt="{{name}}" />
-        </figure>
-        </div>
-        <div class="column title"><h2>{{credit.name}}</h2></div>
+<!-- Use default portrait if a specific one doesn't exist -->
+{% capture credit_portrait %}{% file_exists /assets/images/portraits/{{ credit.id }}.png %}{% endcapture %}
+{% if credit_portrait == "true" %}
+  {% assign credit_portrait = credit.id %}
+{% else %}
+  <script>console.error('Missing credit portrait /assets/images/portraits/{{credit.id}}.png');</script>
+  {% assign credit_portrait = "default" %}
+{% endif %}
+
+<div class="column is-one-third">
+  <div class="columns">
+    <div class="column is-one-quarter">
+      <figure class="image">
+        <img class="is-rounded" src="/assets/images/portraits/{{credit_portrait}}.png" alt="{{credit.name}}" />
+      </figure>
     </div>
-        <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-        {% if credit.joined %}<p>joined {{credit.joined}}</p>{% endif %}
-        <p>{{credit.role}}</p>
-        <p>{{credit.about}}</p>
-        <br>
+    <div class="column title"><h2>{{credit.name}}</h2></div>
+  </div>
+  <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen" id="{{credit.id}}">
+    <p class="credit-role">{{credit.role}}{% if credit.joined %} (joined {{credit.joined}}){% endif %}</p>
+    <p class="credit-about">{{credit.about}}</p>
+    <hr />
+    <div class="container columns is-centered">
+    {% if credit.urls && credit.urls !empty %}
         {% for url in credit.urls %}
-        <div class="container columns is-centered">
-            <div>
-                <a href="{{url.url}}"
-                    class="button is-rounded is-uppercase has-text-weight-normal is-white is-outlined">{{url.caption}}</a>
-                </a>
-            </div>
+        <div class="column is-one-fifth">
+          <a href="{{url.url}}" class="button is-rounded is-uppercase has-text-weight-normal is-white is-outlined">{{url.caption}}</a>
         </div>
         {% endfor %}
+    {% endif %}
     </div>
+  </div>
 </div>
